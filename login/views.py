@@ -767,13 +767,26 @@ def feedback(request):
     return redirect('login:index')
 
 def viewfeedback(request):
-    
+    class feedbacks:
+        def __init__(self,id,name,email,subject,message):
+            self.id = id
+            self.name = name
+            self.email = email
+            self.subject = subject
+            self.message = message
 
     db = MySQLdb.connect('localhost', 'rahulp', 'password1234', 'avadhootent')
     cursor = db.cursor()
-    cursor.execute(
-        "insert into feedback (name,email,subject,message) values ('" + str(name) + "','" + str(email) + "','" + str(
-            subject) + "','" + str(message) + "');")
-    db.commit()
+    cursor.execute("select * from feedback;")
+    entries = cursor.fetchall()
+    details=[]
+    for item in entries:
+        details.append(feedbacks(item[0],item[1],item[2],item[3],item[4]))
+    context={
+        'details':details,
+        'loggedin':2,
+        'name': request.user.first_name,
+    }
+
     db.close()
-    return redirect('login:index')
+    return render(request,'login/viewfeedbacks.html',context)

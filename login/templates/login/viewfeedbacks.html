@@ -1,0 +1,30 @@
+{% extends 'login/base.html' %}
+{% block body %}
+    <div class="well well-sm">
+        <div class="container">
+            <h2><strong>Feedbacks :</strong></h2>
+            <table class = "table table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Subject</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in details %}
+                    <tr>
+                        <td>{{item.id}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.email}}</td>
+                        <td>{{item.subject}}</td>
+                        <td>{{item.message}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
