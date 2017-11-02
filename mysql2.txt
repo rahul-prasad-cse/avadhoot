@@ -1,0 +1,53 @@
+mysql> create database avadhootent character set UTF8;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> create user rahulp@localhost identified by 'password1234';
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> grant all privileges on avadhootent.* to rahul@localhost;
+ERROR 1133 (42000): Can't find any matching row in the user table
+mysql> grant all privileges on avadhootent.* to rahulp@localhost;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> flush privileges;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> exit;
+mysql> use avadhootent;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++----------------------------+
+| Tables_in_avadhootent      |
++----------------------------+
+| auth_group                 |
+| auth_group_permissions     |
+| auth_permission            |
+| auth_user                  |
+| auth_user_groups           |
+| auth_user_user_permissions |
+| django_admin_log           |
+| django_content_type        |
+| django_migrations          |
+| django_session             |
+| users                      |
++----------------------------+
+11 rows in set (0.00 sec)
+
+mysql> create table product(
+    -> product_id int NOT NULL,
+    -> product_name varchar(100) NOT NULL,
+    -> product_quantity int NOT NULL,
+    -> ^C
+mysql> create table product(
+    -> id int NOT NULL,
+    -> name varchar(100) NOT NULL,
+    -> quantity int NOT NULL,
+    -> description varchar(500),
+    -> primary key (id)
+    -> );
+Query OK, 0 rows affected (0.73 sec)
+
+mysql> exit;

@@ -1,0 +1,37 @@
+{% extends 'login/base.html' %}
+{% block body %}
+    <div class="well well-sm">
+        <div class="container">
+            <h2><strong>Products :</strong></h2>
+            <table class = "table table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in details %}
+                    <tr>
+                        <td>{{item.id}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.description}}</td>
+                        <td>{{item.quantity}}</td>
+                        <td>{{item.price}}</td>
+                        <td>
+                            <form action="{% url 'login:viewstockproduct' item.id %}" method = "post">
+                                {% csrf_token %}
+                                <input type="submit" value="View Stock">
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

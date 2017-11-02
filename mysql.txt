@@ -1,0 +1,675 @@
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| avadhootent        |
++--------------------+
+2 rows in set (0.03 sec)
+
+mysql> use avadhootent;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++----------------------------+
+| Tables_in_avadhootent      |
++----------------------------+
+| auth_group                 |
+| auth_group_permissions     |
+| auth_permission            |
+| auth_user                  |
+| auth_user_groups           |
+| auth_user_user_permissions |
+| django_admin_log           |
+| django_content_type        |
+| django_migrations          |
+| django_session             |
++----------------------------+
+10 rows in set (0.00 sec)
+
+mysql> describe auth_group
+    -> ;
++-------+-------------+------+-----+---------+----------------+
+| Field | Type        | Null | Key | Default | Extra          |
++-------+-------------+------+-----+---------+----------------+
+| id    | int(11)     | NO   | PRI | NULL    | auto_increment |
+| name  | varchar(80) | NO   | UNI | NULL    |                |
++-------+-------------+------+-----+---------+----------------+
+2 rows in set (0.09 sec)
+
+mysql> create table users();
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+mysql> create table users()
+    -> ^C
+mysql> show tables;
++----------------------------+
+| Tables_in_avadhootent      |
++----------------------------+
+| auth_group                 |
+| auth_group_permissions     |
+| auth_permission            |
+| auth_user                  |
+| auth_user_groups           |
+| auth_user_user_permissions |
+| django_admin_log           |
+| django_content_type        |
+| django_migrations          |
+| django_session             |
++----------------------------+
+10 rows in set (0.14 sec)
+
+mysql> create table users(
+    -> username varchar(100) not null,
+    -> password varchar(100) not null,
+    -> first_name varchar(20) not null,
+    -> last_name varchar(20),
+    -> address varchar(500),
+    -> city varchar(20),
+    -> state varchar(20),
+    -> pincode int,
+    -> phone varchar(10) unique not null,
+    -> email varchar(100) default null,
+    -> unique key (email),
+    -> primary key (username)
+    -> );
+Query OK, 0 rows affected (1.28 sec)
+
+mysql> describe users;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| username   | varchar(100) | NO   | PRI | NULL    |       |
+| password   | varchar(100) | NO   |     | NULL    |       |
+| first_name | varchar(20)  | NO   |     | NULL    |       |
+| last_name  | varchar(20)  | YES  |     | NULL    |       |
+| address    | varchar(500) | YES  |     | NULL    |       |
+| city       | varchar(20)  | YES  |     | NULL    |       |
+| state      | varchar(20)  | YES  |     | NULL    |       |
+| pincode    | int(11)      | YES  |     | NULL    |       |
+| phone      | varchar(10)  | NO   | UNI | NULL    |       |
+| email      | varchar(100) | YES  | UNI | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+10 rows in set (0.04 sec)
+
+mysql> exit;
+mysql> use avadhootent;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++----------------------------+
+| Tables_in_avadhootent      |
++----------------------------+
+| auth_group                 |
+| auth_group_permissions     |
+| auth_permission            |
+| auth_user                  |
+| auth_user_groups           |
+| auth_user_user_permissions |
+| django_admin_log           |
+| django_content_type        |
+| django_migrations          |
+| django_session             |
+| product                    |
+| users                      |
++----------------------------+
+12 rows in set (0.00 sec)
+
+mysql> describe product;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| id          | int(11)      | NO   | PRI | NULL    |       |
+| name        | varchar(100) | NO   |     | NULL    |       |
+| quantity    | int(11)      | NO   |     | NULL    |       |
+| description | varchar(500) | YES  |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+4 rows in set (0.03 sec)
+
+mysql> alter table product
+    -> add price float not null;
+^C -- query aborted
+ERROR 1317 (70100): Query execution was interrupted
+mysql> alter table product add price float;
+Query OK, 0 rows affected (9.47 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> select * from product;
++----+---------+----------+----------------+-------+
+| id | name    | quantity | description    | price |
++----+---------+----------+----------------+-------+
+|  1 | Nirma   |      100 | Washing Powder |  NULL |
+|  2 | surf    |      100 | dho lo         |  NULL |
+|  3 | pikachu |      100 | CCC            |  NULL |
+|  4 | google  |      100 | le lo          |  NULL |
+|  5 | honulu  |      100 | dkfjhg         |  NULL |
++----+---------+----------+----------------+-------+
+5 rows in set (0.00 sec)
+
+mysql> update product set price = 100
+    -> ;
+Query OK, 5 rows affected (0.06 sec)
+Rows matched: 5  Changed: 5  Warnings: 0
+
+mysql> alter table product 
+    -> add constraint price not null;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'not null' at line 2
+mysql> alter table product
+    -> alter column price
+    -> set not null;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'not null' at line 3
+mysql> alter table product 
+    -> drop price;
+Query OK, 0 rows affected (0.71 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table product
+    -> add price float not null;
+Query OK, 0 rows affected (0.66 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> update product set price = 100;
+Query OK, 5 rows affected (0.06 sec)
+Rows matched: 5  Changed: 5  Warnings: 0
+
+mysql> select * from product;
++----+---------+----------+----------------+-------+
+| id | name    | quantity | description    | price |
++----+---------+----------+----------------+-------+
+|  1 | Nirma   |      100 | Washing Powder |   100 |
+|  2 | surf    |      100 | dho lo         |   100 |
+|  3 | pikachu |      100 | CCC            |   100 |
+|  4 | google  |      100 | le lo          |   100 |
+|  5 | honulu  |      100 | dkfjhg         |   100 |
++----+---------+----------+----------------+-------+
+5 rows in set (0.02 sec)
+
+mysql> describe product;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| id          | int(11)      | NO   | PRI | NULL    |       |
+| name        | varchar(100) | NO   |     | NULL    |       |
+| quantity    | int(11)      | NO   |     | NULL    |       |
+| description | varchar(500) | YES  |     | NULL    |       |
+| price       | float        | NO   |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> exit;
+mysql> use avadhootent;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> create table cart(
+    -> cust_id
+    -> ^C
+mysql> show tables;
++----------------------------+
+| Tables_in_avadhootent      |
++----------------------------+
+| auth_group                 |
+| auth_group_permissions     |
+| auth_permission            |
+| auth_user                  |
+| auth_user_groups           |
+| auth_user_user_permissions |
+| django_admin_log           |
+| django_content_type        |
+| django_migrations          |
+| django_session             |
+| product                    |
+| users                      |
++----------------------------+
+12 rows in set (0.00 sec)
+
+mysql> select * from auth_user;
++----+-------------------------------------------------------------------------------+----------------------------+--------------+---------------+------------+-----------+---------------------------------+----------+-----------+----------------------------+
+| id | password                                                                      | last_login                 | is_superuser | username      | first_name | last_name | email                           | is_staff | is_active | date_joined                |
++----+-------------------------------------------------------------------------------+----------------------------+--------------+---------------+------------+-----------+---------------------------------+----------+-----------+----------------------------+
+|  1 | pbkdf2_sha256$36000$RtnIC4y801Wq$3eG676CNpkrZiftfohzglU6jurJ6U2IKofIIlKSJNg8= | 2017-11-01 00:29:59.215938 |            1 | rahul         |            |           | rahul.prasad.cse15@iitbhu.ac.in |        1 |         1 | 2017-10-28 08:07:35.370077 |
+|  4 | pbkdf2_sha256$36000$e38HOjf7Gadh$zy3sbsFUEBAzGVn7PHwtkRHvQImBQ4rEnumeySEf/sU= | 2017-10-31 16:47:26.091937 |            0 | rahul_prasad_ | Rahul      | Prasad    | rahul@gmail.com                 |        0 |         1 | 2017-10-31 16:38:35.997839 |
++----+-------------------------------------------------------------------------------+----------------------------+--------------+---------------+------------+-----------+---------------------------------+----------+-----------+----------------------------+
+2 rows in set (0.00 sec)
+
+mysql> describe users;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| username   | varchar(100) | NO   | PRI | NULL    |       |
+| password   | varchar(100) | NO   |     | NULL    |       |
+| first_name | varchar(20)  | NO   |     | NULL    |       |
+| last_name  | varchar(20)  | YES  |     | NULL    |       |
+| address    | varchar(500) | YES  |     | NULL    |       |
+| city       | varchar(20)  | YES  |     | NULL    |       |
+| state      | varchar(20)  | YES  |     | NULL    |       |
+| pincode    | int(11)      | YES  |     | NULL    |       |
+| phone      | varchar(10)  | NO   | UNI | NULL    |       |
+| email      | varchar(100) | YES  | UNI | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+10 rows in set (0.10 sec)
+
+mysql> alter table users
+    -> drop password,first_name,last_name,email;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'first_name,last_name,email' at line 2
+mysql> alter table users
+    -> drop column password, first_name, last_name, email;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'first_name, last_name, email' at line 2
+mysql> alter table users
+    -> drop column password;
+Query OK, 0 rows affected (1.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table users drop column first_name;
+Query OK, 0 rows affected (0.69 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table users drop column last_name;
+Query OK, 0 rows affected (0.60 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table users drop column email;
+Query OK, 0 rows affected (0.59 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> describe users;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| username | varchar(100) | NO   | PRI | NULL    |       |
+| address  | varchar(500) | YES  |     | NULL    |       |
+| city     | varchar(20)  | YES  |     | NULL    |       |
+| state    | varchar(20)  | YES  |     | NULL    |       |
+| pincode  | int(11)      | YES  |     | NULL    |       |
+| phone    | varchar(10)  | NO   | UNI | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> alter table users
+    -> add foreign key (username) references auth_user(username);
+Query OK, 0 rows affected (1.19 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> describe auth_user;
++--------------+--------------+------+-----+---------+----------------+
+| Field        | Type         | Null | Key | Default | Extra          |
++--------------+--------------+------+-----+---------+----------------+
+| id           | int(11)      | NO   | PRI | NULL    | auto_increment |
+| password     | varchar(128) | NO   |     | NULL    |                |
+| last_login   | datetime(6)  | YES  |     | NULL    |                |
+| is_superuser | tinyint(1)   | NO   |     | NULL    |                |
+| username     | varchar(150) | NO   | UNI | NULL    |                |
+| first_name   | varchar(30)  | NO   |     | NULL    |                |
+| last_name    | varchar(30)  | NO   |     | NULL    |                |
+| email        | varchar(254) | NO   |     | NULL    |                |
+| is_staff     | tinyint(1)   | NO   |     | NULL    |                |
+| is_active    | tinyint(1)   | NO   |     | NULL    |                |
+| date_joined  | datetime(6)  | NO   |     | NULL    |                |
++--------------+--------------+------+-----+---------+----------------+
+11 rows in set (0.00 sec)
+
+mysql> alter table users
+    -> drop foreign key (username);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(username)' at line 2
+mysql> alter table users drop foreign key username;
+ERROR 1091 (42000): Can't DROP 'username'; check that column/key exists
+mysql> describe users;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| username | varchar(100) | NO   | PRI | NULL    |       |
+| address  | varchar(500) | YES  |     | NULL    |       |
+| city     | varchar(20)  | YES  |     | NULL    |       |
+| state    | varchar(20)  | YES  |     | NULL    |       |
+| pincode  | int(11)      | YES  |     | NULL    |       |
+| phone    | varchar(10)  | NO   | UNI | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> alter table users drop foreign key username;
+ERROR 1091 (42000): Can't DROP 'username'; check that column/key exists
+mysql> alter table users drop column username;
+ERROR 1828 (HY000): Cannot drop column 'username': needed in a foreign key constraint 'users_ibfk_1'
+mysql> alter table users drop primary key username;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'username' at line 1
+mysql> show create table users;
++-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Table | Create Table                                                                                                                                                                                                                                                                                                                                                                                                                         |
++-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| users | CREATE TABLE `users` (
+  `username` varchar(100) NOT NULL,
+  `address` varchar(500) DEFAULT NULL,
+  `city` varchar(20) DEFAULT NULL,
+  `state` varchar(20) DEFAULT NULL,
+  `pincode` int(11) DEFAULT NULL,
+  `phone` varchar(10) NOT NULL,
+  PRIMARY KEY (`username`),
+  UNIQUE KEY `phone` (`phone`),
+  CONSTRAINT `users_ibfk_1` FOREIGN KEY (`username`) REFERENCES `auth_user` (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 |
++-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+1 row in set (0.07 sec)
+
+mysql> alter table users drop foreign key users_ibfk_1;
+Query OK, 0 rows affected (0.08 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table users drop column username;
+Query OK, 0 rows affected (0.68 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table user 
+    -> add column userid int primary key first;
+ERROR 1146 (42S02): Table 'avadhootent.user' doesn't exist
+mysql> alter table users  add column userid int primary key first;
+Query OK, 0 rows affected (0.73 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table users
+    -> add foreign key (userid) references auth_user(id);
+Query OK, 0 rows affected (0.63 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> describe users;
++---------+--------------+------+-----+---------+-------+
+| Field   | Type         | Null | Key | Default | Extra |
++---------+--------------+------+-----+---------+-------+
+| userid  | int(11)      | NO   | PRI | NULL    |       |
+| address | varchar(500) | YES  |     | NULL    |       |
+| city    | varchar(20)  | YES  |     | NULL    |       |
+| state   | varchar(20)  | YES  |     | NULL    |       |
+| pincode | int(11)      | YES  |     | NULL    |       |
+| phone   | varchar(10)  | NO   | UNI | NULL    |       |
++---------+--------------+------+-----+---------+-------+
+6 rows in set (0.02 sec)
+
+mysql> select * from users;
+Empty set (0.00 sec)
+
+mysql> exit;
+mysql> use avadhootent;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> create table cart(
+    -> cust_id int primary key references auth_user(id),
+    -> ^C
+mysql> create table cart(
+    -> cust_id int,
+    -> cart_item_id,
+    -> ^C
+mysql> create table cart(
+    -> cust_id int,
+    -> item_id int,
+    -> quantity int,
+    -> cost_item float,
+    -> constraint pk_cart primary key (cust_id,item_id),
+    -> foreign key (cust_id) references auth_user(id),
+    -> foreign key (item_id) references product(id) on delete cascade on update cascade,
+    -> );
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 9
+mysql> create table cart( cust_id int, item_id int, quantity int, cost_item float, constraint pk_cart primary key (cust_id,item_id), foreign key (cust_id) references auth_user(id), foreign key (item_id) references product(id) on delete cascade on update cascade );
+Query OK, 0 rows affected (0.39 sec)
+
+mysql> exit;
+mysql> use avadhootent;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++----------------------------+
+| Tables_in_avadhootent      |
++----------------------------+
+| auth_group                 |
+| auth_group_permissions     |
+| auth_permission            |
+| auth_user                  |
+| auth_user_groups           |
+| auth_user_user_permissions |
+| cart                       |
+| django_admin_log           |
+| django_content_type        |
+| django_migrations          |
+| django_session             |
+| product                    |
+| users                      |
++----------------------------+
+13 rows in set (0.00 sec)
+
+mysql> describe cart;
++-----------+---------+------+-----+---------+-------+
+| Field     | Type    | Null | Key | Default | Extra |
++-----------+---------+------+-----+---------+-------+
+| cust_id   | int(11) | NO   | PRI | NULL    |       |
+| item_id   | int(11) | NO   | PRI | NULL    |       |
+| quantity  | int(11) | YES  |     | NULL    |       |
+| cost_item | float   | YES  |     | NULL    |       |
++-----------+---------+------+-----+---------+-------+
+4 rows in set (0.01 sec)
+
+mysql> describe product;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| id          | int(11)      | NO   | PRI | NULL    |       |
+| name        | varchar(100) | NO   |     | NULL    |       |
+| quantity    | int(11)      | NO   |     | NULL    |       |
+| description | varchar(500) | YES  |     | NULL    |       |
+| price       | float        | NO   |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> alter table product
+    -> drop column id;
+ERROR 1829 (HY000): Cannot drop column 'id': needed in a foreign key constraint 'cart_ibfk_2' of table 'avadhootent.cart'
+mysql> alter table product 
+    -> modify column id int not null auto_increment primary key;
+ERROR 1068 (42000): Multiple primary key defined
+mysql> alter table product 
+    -> drop primary key;
+ERROR 1025 (HY000): Error on rename of './avadhootent/#sql-4a3_364' to './avadhootent/product' (errno: 150 - Foreign key constraint is incorrectly formed)
+mysql> describe product;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| id          | int(11)      | NO   | PRI | NULL    |       |
+| name        | varchar(100) | NO   |     | NULL    |       |
+| quantity    | int(11)      | NO   |     | NULL    |       |
+| description | varchar(500) | YES  |     | NULL    |       |
+| price       | float        | NO   |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> alter table product modify column id int auto_increment;
+ERROR 1833 (HY000): Cannot change column 'id': used in a foreign key constraint 'cart_ibfk_2' of table 'avadhootent.cart'
+mysql> show create table cart;
++-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Table | Create Table                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
++-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| cart  | CREATE TABLE `cart` (
+  `cust_id` int(11) NOT NULL,
+  `item_id` int(11) NOT NULL,
+  `quantity` int(11) DEFAULT NULL,
+  `cost_item` float DEFAULT NULL,
+  PRIMARY KEY (`cust_id`,`item_id`),
+  KEY `item_id` (`item_id`),
+  CONSTRAINT `cart_ibfk_1` FOREIGN KEY (`cust_id`) REFERENCES `auth_user` (`id`),
+  CONSTRAINT `cart_ibfk_2` FOREIGN KEY (`item_id`) REFERENCES `product` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 |
++-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
+mysql> alter table cart 
+    -> drop foreign key cart_infk_2;
+ERROR 1091 (42000): Can't DROP 'cart_infk_2'; check that column/key exists
+mysql> alter table cart  drop foreign key cart_ibfk_2;
+Query OK, 0 rows affected (0.09 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table product modify column id int auto_increment primary key;
+ERROR 1068 (42000): Multiple primary key defined
+mysql> alter table product drop primary key;
+Query OK, 5 rows affected (0.72 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+mysql> alter table product modify column id int auto_increment primary key;
+Query OK, 5 rows affected (0.71 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+mysql> describe product;
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| id          | int(11)      | NO   | PRI | NULL    | auto_increment |
+| name        | varchar(100) | NO   |     | NULL    |                |
+| quantity    | int(11)      | NO   |     | NULL    |                |
+| description | varchar(500) | YES  |     | NULL    |                |
+| price       | float        | NO   |     | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+5 rows in set (0.01 sec)
+
+mysql> alter table cart 
+    -> add foreign key (item_id) references product(id) on delete cascade on update cascade;
+Query OK, 0 rows affected (0.87 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> describe cart;
++-----------+---------+------+-----+---------+-------+
+| Field     | Type    | Null | Key | Default | Extra |
++-----------+---------+------+-----+---------+-------+
+| cust_id   | int(11) | NO   | PRI | NULL    |       |
+| item_id   | int(11) | NO   | PRI | NULL    |       |
+| quantity  | int(11) | YES  |     | NULL    |       |
+| cost_item | float   | YES  |     | NULL    |       |
++-----------+---------+------+-----+---------+-------+
+4 rows in set (0.02 sec)
+
+mysql> exit;
+mysql> use avadhootent;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> create table orders(
+    -> order_id int auto_increment,
+    -> cust_id int,
+    -> order_status int,
+    -> payment_status int,
+    -> total_cost float,
+    -> order_date date,
+    -> constraint pk_orders primary key (order_id,cust_id),
+    -> foreign key (cust_id) references auth_user(id) on delete set null);
+ERROR 1215 (HY000): Cannot add foreign key constraint
+mysql> create table orders( order_id int auto_increment, cust_id int, order_status int, payment_status int, total_cost float, order_date date, constraint pk_orders primary key (order_id,cust_id), foreign key (cust_id) references auth_user (id) on delete set null);
+ERROR 1215 (HY000): Cannot add foreign key constraint
+mysql> describe auth_user;
++--------------+--------------+------+-----+---------+----------------+
+| Field        | Type         | Null | Key | Default | Extra          |
++--------------+--------------+------+-----+---------+----------------+
+| id           | int(11)      | NO   | PRI | NULL    | auto_increment |
+| password     | varchar(128) | NO   |     | NULL    |                |
+| last_login   | datetime(6)  | YES  |     | NULL    |                |
+| is_superuser | tinyint(1)   | NO   |     | NULL    |                |
+| username     | varchar(150) | NO   | UNI | NULL    |                |
+| first_name   | varchar(30)  | NO   |     | NULL    |                |
+| last_name    | varchar(30)  | NO   |     | NULL    |                |
+| email        | varchar(254) | NO   |     | NULL    |                |
+| is_staff     | tinyint(1)   | NO   |     | NULL    |                |
+| is_active    | tinyint(1)   | NO   |     | NULL    |                |
+| date_joined  | datetime(6)  | NO   |     | NULL    |                |
++--------------+--------------+------+-----+---------+----------------+
+11 rows in set (0.00 sec)
+
+mysql> create table order_items(
+    -> order_id int,
+    -> item_id int,
+    -> item_quantity int,
+    -> price float,
+    -> ^C
+mysql> create table order_items(
+    -> order_id int,
+    -> item_id int, 
+    -> item_quantity int,
+    -> price float,
+    -> primary key (order_id,item_id),
+    -> foreign key (item_id) references product(id) on delete set null,
+    -> foreign key (price) references product(price) on delete cascade);
+ERROR 1215 (HY000): Cannot add foreign key constraint
+mysql> describe product;
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| id          | int(11)      | NO   | PRI | NULL    | auto_increment |
+| name        | varchar(100) | NO   |     | NULL    |                |
+| quantity    | int(11)      | NO   |     | NULL    |                |
+| description | varchar(500) | YES  |     | NULL    |                |
+| price       | float        | NO   |     | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+5 rows in set (0.00 sec)
+
+mysql> create table order_items( order_id int, item_id int,  item_quantity int, price float, primary key (order_id,item_id), foreign key (item_id) references product(id) on delete set null);
+ERROR 1215 (HY000): Cannot add foreign key constraint
+mysql> create table order_items( order_id int, item_id int,  item_quantity int, price float, primary key (order_id,item_id), foreign key (item_id) references product(id) on delete set null);
+ERROR 1215 (HY000): Cannot add foreign key constraint
+mysql> create table order_items( order_id int, item_id int,  item_quantity int, price float, primary key (order_id,item_id), foreign key (item_id) references product(id));
+Query OK, 0 rows affected (0.25 sec)
+
+mysql> create table order(
+    -> order_id int auto_increment,
+    -> cust_id int,
+    -> order_date date,
+    -> total_cost float,
+    -> payment_status tinyint,
+    -> delivery_status tinyint,
+    -> primary key (order_id,cust_id),
+    -> foreign key (cust_id) references auth_user(id),
+    -> );
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order(
+order_id int auto_increment,
+cust_id int,
+order_date date,
+total_cost flo' at line 1
+mysql> create table order( order_id int auto_increment, cust_id int, order_date date, total_cost float, payment_status tinyint, delivery_status tinyint, primary key (order_id,cust_id), foreign key (cust_id) references auth_user(id) );
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order( order_id int auto_increment, cust_id int, order_date date, total_cost flo' at line 1
+mysql> create table order( order_id int auto_increment, cust_id int, order_date date, total_cost float, payment_status tinyint(1), delivery_status tinyint(1), primary key (order_id,cust_id), foreign key (cust_id) references auth_user(id) );
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order( order_id int auto_increment, cust_id int, order_date date, total_cost flo' at line 1
+mysql> create table order( order_id int auto_increment, cust_id int, order_date date, total_cost float, payment_status tinyint(1), delivery_status tinyint(1), primary key (order_id,cust_id), foreign key (cust_id) references auth_user(id) );
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order( order_id int auto_increment, cust_id int, order_date date, total_cost flo' at line 1
+mysql> create table order (order_id int auto_increment, cust_id int, order_date date, total_cost float, payment_status tinyint(1), delivery_status tinyint(1), primary key (order_id,cust_id), foreign key (cust_id) references auth_user(id) );
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order (order_id int auto_increment, cust_id int, order_date date, total_cost flo' at line 1
+mysql> show tables;
++----------------------------+
+| Tables_in_avadhootent      |
++----------------------------+
+| auth_group                 |
+| auth_group_permissions     |
+| auth_permission            |
+| auth_user                  |
+| auth_user_groups           |
+| auth_user_user_permissions |
+| cart                       |
+| django_admin_log           |
+| django_content_type        |
+| django_migrations          |
+| django_session             |
+| order_items                |
+| product                    |
+| users                      |
++----------------------------+
+14 rows in set (0.00 sec)
+
+mysql> create table orders (order_id int auto_increment, cust_id int, order_date date, total_cost float, payment_status tinyint(1), delivery_status tinyint(1), primary key (order_id,cust_id), foreign key (cust_id) references auth_user(id) );
+Query OK, 0 rows affected (0.36 sec)
+
+mysql> alter table order_items
+    -> add foreign key (order_id) references orders(order_id);
+Query OK, 0 rows affected (0.82 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> 

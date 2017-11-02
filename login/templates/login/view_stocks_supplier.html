@@ -1,0 +1,36 @@
+{% extends 'login/base.html' %}
+{% block body %}
+    <div class="well well-sm">
+        <div class="container">
+
+            <h2><strong>Stock of selected supplier :</strong></h2>
+            <form action="{% url 'login:addsupplier' %}" method="post">{% csrf_token %}
+                <input type="submit" value="Add Supplier">
+            </form>
+            <table class = "table table-striped">
+                <thead>
+                    <tr>
+                        <th>Product Id</th>
+                        <th>Product Name</th>
+                        <th>Cost per piece of Product</th>
+                        <th>Quantity</th>
+                        <th>Date of Supply</th>
+                        <th>Comments</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in details %}
+                    <tr>
+                        <td>{{item.id}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.price}}</td>
+                        <td>{{item.quantity}}</td>
+                        <td>{{item.dateofsupply}}</td>
+                        <td>{{item.comments}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

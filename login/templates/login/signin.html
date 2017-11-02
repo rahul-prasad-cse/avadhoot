@@ -1,0 +1,26 @@
+{% extends 'login/base.html' %}
+{% block body %}
+    <form action="{% url 'login:signin' %}" method="post">
+        {% csrf_token %}
+      <div class="form-group" style="text-align: center; background-color: #e7e7e7; width: 50%;margin: auto">
+          <br>
+          <h2 style="text-align: center;"><strong>Login</strong></h2><br>
+        <label for="username" style="text-align: center;">Username:</label><br>
+        <input type="text" class="form-control" name="username" id="username" style="width: 40%; text-align: center; margin: auto;" autofocus="true"><br><br>
+      </div>
+      <div class="form-group" style="text-align: center;background-color: #e7e7e7;width: 50%;margin: auto;padding-bottom: 1%">
+        <label for="password" style="text-align: center;">Password:</label><br>
+        <input type="password" class="form-control" name="password" id="password" style="width: 40%; text-align: center;margin: auto;">
+      </div>
+      <div style="text-align: center;background-color: #e7e7e7;width: 50%;margin: auto;padding-bottom: 1%">
+        <button class="btn btn-lg btn-info" type="submit">Sign In</button>
+      </div>
+    </form>
+    <form action="{% url 'login:register' %}" method="post">
+        {% csrf_token %}
+      <div class="form-group" style="text-align: center;background-color: #e7e7e7;width: 50%;margin: auto;padding-bottom: 1%">
+          <button class="btn btn-lg btn-info" type="submit">Join Us!</button>
+      </div>
+    </form>
+
+{% endblock %}

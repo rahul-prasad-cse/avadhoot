@@ -1,0 +1,55 @@
+{% extends 'login/base.html' %}
+{% block payment %}
+<script src= "https://www.payumoney.com/Api/REST/op/buttonScript" async="true" > </script>
+
+{% endblock %}
+
+{% block body %}
+    <div class="well well-sm">
+        <div class="container">
+            <h2><strong>Employee Details:</strong></h2>
+            <form action="{% url 'login:addemployee' %}" method="post">{% csrf_token %}
+                <input type="submit" value="Add Employee">
+            </form>
+
+            <table class = "table table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Pin Code</th>
+                        <th>Sex</th>
+                        <th>Phone</th>
+                        <th>Salary</th>
+                        <th>Date Of Joining</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in details %}
+                    <tr>
+                        <td>{{item.id}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.address}}</td>
+                        <td>{{item.city}}</td>
+                        <td>{{item.state}}</td>
+                        <td>{{item.pincode}}</td>
+                        <td>{{item.sex}}</td>
+                        <td>{{item.phone}}</td>
+                        <td>{{item.salary}}</td>
+                        <td>{{item.dateofjoin}}</td>
+                        <td>
+                            <form action="{% url 'login:removeemployee' item.id %}" method="post">{% csrf_token %}
+                                <input type="submit" value="Remove Employee">
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

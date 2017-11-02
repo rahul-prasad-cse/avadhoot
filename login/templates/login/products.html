@@ -1,0 +1,45 @@
+{% extends 'login/base.html' %}
+{% block body %}
+    <div class="container">
+        <div class="btn-group" style="padding-bottom: 1%">
+
+            <form action="{% url 'login:products'  %}" method="post">
+                {%csrf_token%}
+                <div class="form-group">
+                    <label>Sort By:</label><br>
+                    <!--<select id="sortby" name="sortby" class="form-control">-->
+                        <!--<option value="name">Name</option>-->
+                        <!--<option value="price">Price</option>-->
+                    <!--</select>-->
+                    <label class="radio-inline"><input type="radio" name="optradio" value="name" id="name">Name</label>
+                    <label class="radio-inline"><input type="radio" name="optradio" value="price" id="price" >Price</label><br>
+                    <input type="submit" class="btn btn-m" value="Sort" style="width: 100%;">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+      {% for product in products %}
+        <form action="{% url 'login:addtocart' product.id %}" method="post">{% csrf_token %}
+        <div class="col-sm-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+                {{ product.name }}
+            </div>
+            <div class="panel-footer">
+                <label>Price: {{product.price}}</label><br>
+                <label>Description: {{product.description}}</label><br>
+                <input type="number" name="quantity" id = "quantity" min="0" style="width: 20%;">
+                <button class="btn btn-primary pull-right" type="submit"><span class="glyphicon glyphicon-plus"></span>Add to cart</button>
+            </div>
+          </div>
+        </div>
+        </form>
+
+      {% endfor %}
+      </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'login/base.html' %}
+{% block body %}
+    <div class="well well-sm">
+        <div class="container">
+            <h2><strong>Stock of selected product :</strong></h2>
+            <table class = "table table-striped">
+                <thead>
+                    <tr>
+                        <th>Supplier Id</th>
+                        <th>Supplier Name</th>
+                        <th>Quantity</th>
+                        <th>Date of Supply</th>
+                        <th>Comments</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in details %}
+                    <tr>
+                        <td>{{item.supplierid}}</td>
+                        <td>{{item.suppliername}}</td>
+                        <td>{{item.quantity}}</td>
+                        <td>{{item.dateofsupply}}</td>
+                        <td>{{item.comments}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

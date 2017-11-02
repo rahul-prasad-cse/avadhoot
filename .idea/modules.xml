@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/avadhoot.iml" filepath="$PROJECT_DIR$/.idea/avadhoot.iml" />
+      <module fileurl="file://$USER_HOME$/Leave_Management_14074009/leave_management/.idea/leave_management.iml" filepath="$USER_HOME$/Leave_Management_14074009/leave_management/.idea/leave_management.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,48 @@
+{% extends 'login/base.html' %}
+{% block body %}
+    {% if loggedin == 0 %}
+        <h2 style="text-align: center">Please log in to see your cart.</h2>
+    {% else %}
+    <div class="well well-sm">
+        <div class="container">
+            <h2><strong>Cart Items:</strong></h2>
+            <table class = "table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in cart_items %}
+                    <tr>
+                        <td>{{item.name}}</td>
+                        <td>{{item.description}}</td>
+                        <td>{{item.quantity}}</td>
+                        <td>{{item.cost_item}}</td>
+                        <form action="{% url 'login:removecartitem' item.item_id item.cust_id %}" method="post">
+                            {% csrf_token %}
+                            <td><button type="submit" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-trash"></span> Remove
+                                </button>
+                            </td>
+                        </form>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <div class="container">
+                <div class="col-md-8">
+                    <h4><strong>Total Price: {{order_total}}</strong></h4>
+                </div>
+                <form action="{% url 'login:placeorder' %}" method="post">
+                    {% csrf_token %}
+                    <input type="submit" class="btn btn-primary pull-right" value="Place Order">
+                </form>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'login/base.html' %}
+
+{% block body %}
+    <div class="well well-sm">
+        <div class="container">
+            <h2><strong>Orders:</strong></h2>
+            <table class = "table table-striped">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Order Date</th>
+                        <th>Total Cost</th>
+                        <th>Payment Status</th>
+                        <th>Delivery Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in order_entries %}
+                    <tr>
+                        <td>{{forloop.counter}}</td>
+                        <td>{{item.order_date}}</td>
+                        <td>{{item.total_cost}}</td>
+                        <td>
+                            {% if item.payment_status == 0 %}
+                            <span class="glyphicon glyphicon-remove"></span>
+
+                            {% else %}
+                            <span class="glyphicon glyphicon-ok"></span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if item.delivery_status == 0 %}
+                            <span class="glyphicon glyphicon-remove"></span>
+                            {% else %}
+                            <span class="glyphicon glyphicon-ok"></span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

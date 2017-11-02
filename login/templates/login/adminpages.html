@@ -1,0 +1,58 @@
+{% extends 'login/base.html' %}
+{% block body %}
+<div class="well well-sm">
+    <div class="container">
+    <div class="col-md-12">
+        <form action="{% url 'login:admin_user_details' %}" method="post">
+            {% csrf_token %}
+        <button type="submit" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-trash"></span> User Details
+        </button><br>
+        </form>
+
+        <form action="{% url 'login:admin_orders' %}" method="post">
+            {% csrf_token %}
+        <button type="submit" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-trash"></span> Orders
+        </button><br>
+        </form>
+
+        <form action="{% url 'login:admin_employee' %}" method="post">
+            {% csrf_token %}
+        <button type="submit" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-trash"></span> Employee
+        </button><br>
+        </form>
+
+        <form action="{% url 'login:admin_supplier' %}" method="post">
+            {% csrf_token %}
+        <button type="submit" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-trash"></span> Supplier
+        </button><br>
+        </form>
+
+        <form action="{% url 'login:admin_products' %}" method="post">
+            {% csrf_token %}
+        <button type="submit" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-trash"></span> Products
+        </button><br>
+        </form>
+
+        <form action="{% url 'login:admin_stock' %}" method="post">
+            {% csrf_token %}
+        <button type="submit" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-trash"></span> Stock
+        </button><br>
+        </form>
+
+        <form action="{% url 'login:viewfeedback' %}" method="post">
+            {% csrf_token %}
+        <button type="submit" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-trash"></span> View Feedbacks
+        </button><br>
+        </form>
+
+    </div>
+        </div>
+</div>
+{% endblock %}

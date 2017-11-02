@@ -1,0 +1,68 @@
+{% extends 'login/base.html' %}
+{% block payment %}
+<script src= "https://www.payumoney.com/Api/REST/op/buttonScript" async="true" > </script>
+
+{% endblock %}
+
+{% block body %}
+    <div class="well well-sm">
+        <div class="container">
+            <h2><strong>Your Orders:</strong></h2>
+            <table class = "table table-striped">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Order Date</th>
+                        <th>Total Cost</th>
+                        <th>Payment Status</th>
+                        <th>Delivery Status</th>
+                        <th>Cancel Order</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in order_entries %}
+                    <tr>
+                        <td>{{forloop.counter}}</td>
+                        <td>{{item.order_date}}</td>
+                        <td>{{item.total_cost}}</td>
+                        <td>
+                            {% if item.payment_status == 0 %}
+                                <span class='pm-button' id='0EEFDBED4805677985F5D9F164E22218' onclick="window.PUM.pay()">
+                                  <span class="state active">
+                                    <input type="image" src="https://file.payumoney.com/images/payby_payumoney/new_buttons/21.png" width="131" height="37">
+                                  </span>
+                                  <span class="state clicked" style="display:none" >
+                                    <input type="image" src="https://file.payumoney.com/images/payby_payumoney/new_buttons/submitted/21.png" width="131" height="37">
+                                  </span>
+                                </span>
+                            {% else %}
+                            <span class="glyphicon glyphicon-ok"></span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if item.delivery_status == 0 %}
+                            <span class="glyphicon glyphicon-remove"></span>
+                            {% else %}
+                            <span class="glyphicon glyphicon-ok"></span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if item.delivery_status == 0 and item.payment_status == 0 %}
+                                <form action="{% url 'login:cancelorder' item.order_id %}" method="post">{% csrf_token %}
+                                    <button type="submit" class="btn btn-default btn-sm">
+                                    <span class="glyphicon glyphicon-remove-round"></span> Cancel Order
+                                    </button>
+                                </form>
+                            {% else %}
+                                <button type="submit" class="btn btn-default btn-sm" disabled>
+                                <span class="glyphicon glyphicon-remove-round"></span> Cannot Cancel Order
+                                </button>
+                            {% endif%}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

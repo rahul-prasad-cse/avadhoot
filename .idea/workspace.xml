@@ -1,0 +1,1576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="800d4be5-9422-4084-83d9-13307dfca902" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/avadhoot$databasehandle.coverage" NAME="databasehandle Coverage Results" MODIFIED="1509417434703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/login" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="23" column="66" lean-forward="false" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/login/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="769" column="4" lean-forward="true" selection-start-line="769" selection-start-column="4" selection-end-line="769" selection-end-column="4" />
+              <folding>
+                <element signature="e#461#865#0" expanded="false" />
+                <element signature="e#894#2031#0" expanded="false" />
+                <element signature="e#2116#3619#0" expanded="false" />
+                <element signature="e#2461#2573#0" expanded="false" />
+                <element signature="e#3650#3967#0" expanded="false" />
+                <element signature="e#3994#4802#0" expanded="false" />
+                <element signature="e#4873#6016#0" expanded="false" />
+                <element signature="e#6046#6343#0" expanded="false" />
+                <element signature="e#6412#7724#0" expanded="false" />
+                <element signature="e#7773#8335#0" expanded="false" />
+                <element signature="e#8364#8997#0" expanded="false" />
+                <element signature="e#9024#9380#0" expanded="false" />
+                <element signature="e#9412#11657#0" expanded="false" />
+                <element signature="e#9509#9902#0" expanded="false" />
+                <element signature="e#11684#11896#0" expanded="false" />
+                <element signature="e#11927#13319#0" expanded="false" />
+                <element signature="e#13029#13252#0" expanded="false" />
+                <element signature="e#13361#13664#0" expanded="false" />
+                <element signature="e#13704#14308#0" expanded="false" />
+                <element signature="e#14347#15550#0" expanded="false" />
+                <element signature="e#15595#16684#0" expanded="false" />
+                <element signature="e#16717#18444#0" expanded="false" />
+                <element signature="e#18479#19741#0" expanded="false" />
+                <element signature="e#19773#19914#0" expanded="false" />
+                <element signature="e#19949#21029#0" expanded="false" />
+                <element signature="e#21071#21316#0" expanded="false" />
+                <element signature="e#21351#22108#0" expanded="false" />
+                <element signature="e#22152#23167#0" expanded="false" />
+                <element signature="e#23202#24261#0" expanded="false" />
+                <element signature="e#24306#25284#0" expanded="false" />
+                <element signature="e#25316#25459#0" expanded="false" />
+                <element signature="e#25494#26284#0" expanded="false" />
+                <element signature="e#26316#27546#0" expanded="false" />
+                <element signature="e#27575#28514#0" expanded="false" />
+                <element signature="e#28546#29983#0" expanded="false" />
+                <element signature="e#30012#30486#0" expanded="false" />
+                <marker date="1509632901820" expanded="true" signature="945:975" ph="select * fro... product" />
+                <marker date="1509632901820" expanded="true" signature="1040:1061" ph="select * fro... product" />
+                <marker date="1509632901820" expanded="true" signature="2282:2310" ph="select quant... product" />
+                <marker date="1509632901820" expanded="true" signature="2282:2321" ph="select quant... product" />
+                <marker date="1509632901820" expanded="true" signature="2282:2322" ph="select quant... product" />
+                <marker date="1509632901820" expanded="true" signature="2608:2637" ph="update table... " />
+                <marker date="1509632901820" expanded="true" signature="2608:2638" ph="update table... " />
+                <marker date="1509632901820" expanded="true" signature="2608:2687" ph="update table... " />
+                <marker date="1509632901820" expanded="true" signature="2736:2772" ph="select price... product" />
+                <marker date="1509632901820" expanded="true" signature="2736:2773" ph="select price... product" />
+                <marker date="1509632901820" expanded="true" signature="2892:2926" ph="select * fro... cart" />
+                <marker date="1509632901820" expanded="true" signature="2892:2927" ph="select * fro... cart" />
+                <marker date="1509632901820" expanded="true" signature="2892:2964" ph="select * fro... cart" />
+                <marker date="1509632901820" expanded="true" signature="3045:3069" ph="insert into cart... " />
+                <marker date="1509632901820" expanded="true" signature="3045:3095" ph="insert into cart... " />
+                <marker date="1509632901820" expanded="true" signature="3045:3114" ph="insert into cart... " />
+                <marker date="1509632901820" expanded="true" signature="3045:3129" ph="insert into cart... " />
+                <marker date="1509632901820" expanded="true" signature="3045:3133" ph="insert into cart... " />
+                <marker date="1509632901820" expanded="true" signature="3180:3221" ph="select quant... cart" />
+                <marker date="1509632901820" expanded="true" signature="3180:3222" ph="select quant... cart" />
+                <marker date="1509632901820" expanded="true" signature="3180:3262" ph="select quant... cart" />
+                <marker date="1509632901820" expanded="true" signature="3180:3263" ph="select quant... cart" />
+                <marker date="1509632901820" expanded="true" signature="3401:3427" ph="update table... " />
+                <marker date="1509632901820" expanded="true" signature="3401:3428" ph="update table... " />
+                <marker date="1509632901820" expanded="true" signature="3401:3458" ph="update table... " />
+                <marker date="1509632901820" expanded="true" signature="3401:3517" ph="update table... " />
+                <marker date="1509632901820" expanded="true" signature="5353:5389" ph="select * fro... orders" />
+                <marker date="1509632901820" expanded="true" signature="5353:5390" ph="select * fro... orders" />
+                <marker date="1509632901820" expanded="true" signature="5555:5600" ph="select statu... payment" />
+                <marker date="1509632901820" expanded="true" signature="5555:5601" ph="select statu... payment" />
+                <marker date="1509632901820" expanded="true" signature="6547:6675" ph="select * fro... cart" />
+                <marker date="1509632901820" expanded="true" signature="6547:6704" ph="select * fro... cart" />
+                <marker date="1509632901820" expanded="true" signature="7187:7234" ph="select name,... product" />
+                <marker date="1509632901820" expanded="true" signature="7187:7235" ph="select name,... product" />
+                <marker date="1509632901820" expanded="true" signature="7918:7992" ph="select quant... cart" />
+                <marker date="1509632901820" expanded="true" signature="7918:8011" ph="select quant... cart" />
+                <marker date="1509632901820" expanded="true" signature="8099:8131" ph="delete from " />
+                <marker date="1509632901820" expanded="true" signature="8099:8132" ph="delete from " />
+                <marker date="1509632901820" expanded="true" signature="8099:8161" ph="delete from " />
+                <marker date="1509632901820" expanded="true" signature="8099:8163" ph="delete from " />
+                <marker date="1509632901820" expanded="true" signature="8099:8164" ph="delete from " />
+                <marker date="1509632901820" expanded="true" signature="8099:8185" ph="delete from " />
+                <marker date="1509632901820" expanded="true" signature="8206:8246" ph="update produ... " />
+                <marker date="1509632901820" expanded="true" signature="8206:8247" ph="update produ... " />
+                <marker date="1509632901820" expanded="true" signature="10592:10633" ph="select id fr... auth_user" />
+                <marker date="1509632901820" expanded="true" signature="10592:10634" ph="select id fr... auth_user" />
+                <marker date="1509632901820" expanded="true" signature="10592:10651" ph="select id fr... auth_user" />
+                <marker date="1509632901820" expanded="true" signature="10905:10930" ph="insert into users... " />
+                <marker date="1509632901820" expanded="true" signature="10905:10933" ph="insert into users... " />
+                <marker date="1509632901820" expanded="true" signature="10905:10950" ph="insert into users... " />
+                <marker date="1509632901820" expanded="true" signature="10905:10972" ph="insert into users... " />
+                <marker date="1509632901820" expanded="true" signature="10905:10973" ph="insert into users... " />
+                <marker date="1509632901820" expanded="true" signature="10905:10985" ph="insert into users... " />
+                <marker date="1509632901820" expanded="true" signature="10905:10999" ph="insert into users... " />
+                <marker date="1509632901820" expanded="true" signature="10905:11002" ph="insert into users... " />
+                <marker date="1509632901820" expanded="true" signature="12140:12254" ph="select cart.... cart" />
+                <marker date="1509632901820" expanded="true" signature="12421:12470" ph="insert into payment... " />
+                <marker date="1509632901820" expanded="true" signature="12421:12471" ph="insert into payment... " />
+                <marker date="1509632901820" expanded="true" signature="12495:12624" ph="insert into orders... " />
+                <marker date="1509632901820" expanded="true" signature="12495:12643" ph="insert into orders... " />
+                <marker date="1509632901820" expanded="true" signature="12667:12711" ph="select order... orders" />
+                <marker date="1509632901820" expanded="true" signature="12815:12942" ph="select cart.... cart" />
+                <marker date="1509632901820" expanded="true" signature="13045:13146" ph="insert into order_items... " />
+                <marker date="1509632901820" expanded="true" signature="13174:13233" ph="delete from " />
+                <marker date="1509632901820" expanded="true" signature="13821:13884" ph="select item_... order_items" />
+                <marker date="1509632901820" expanded="true" signature="13989:14062" ph="update produ... " />
+                <marker date="1509632901820" expanded="true" signature="14105:14146" ph="delete from " />
+                <marker date="1509632901820" expanded="true" signature="14186:14222" ph="delete from " />
+                <marker date="1509632901820" expanded="true" signature="14928:15110" ph="select users... users" />
+                <marker date="1509632901820" expanded="true" signature="15218:15258" ph="select city,... user_address" />
+                <marker date="1509632901820" expanded="true" signature="15218:15266" ph="select city,... user_address" />
+                <marker date="1509632901820" expanded="true" signature="16067:16104" ph="select * fro... orders" />
+                <marker date="1509632901820" expanded="true" signature="16269:16315" ph="select statu... payment" />
+                <marker date="1509632901820" expanded="true" signature="17319:17472" ph="select * fro... orders" />
+                <marker date="1509632901820" expanded="true" signature="17319:17526" ph="select order... orders" />
+                <marker date="1509632901820" expanded="true" signature="17628:17681" ph="select statu... payment" />
+                <marker date="1509632901820" expanded="true" signature="17628:17682" ph="select statu... payment" />
+                <marker date="1509632901820" expanded="true" signature="17767:17819" ph="select order... items" />
+                <marker date="1509632901820" expanded="true" signature="17767:17836" ph="select order... order_items" />
+                <marker date="1509632901820" expanded="true" signature="17767:17915" ph="select order... order_items" />
+                <marker date="1509632901820" expanded="true" signature="17767:17916" ph="select order... order_items" />
+                <marker date="1509632901820" expanded="true" signature="19032:19310" ph="select emplo... employee" />
+                <marker date="1509632901820" expanded="true" signature="19032:19339" ph="select emplo... employee" />
+                <marker date="1509632901820" expanded="true" signature="20671:20950" ph="insert into supplier... " />
+                <marker date="1509632901820" expanded="true" signature="21191:21211" ph="delete from " />
+                <marker date="1509632901820" expanded="true" signature="21191:21222" ph="delete from " />
+                <marker date="1509632901820" expanded="true" signature="21191:21223" ph="delete from " />
+                <marker date="1509632901820" expanded="true" signature="21724:21731" ph="select order... orders" />
+                <marker date="1509632901820" expanded="true" signature="21724:21745" ph="select * fro... product" />
+                <marker date="1509632901820" expanded="true" signature="21724:21759" ph="select * fro... product" />
+                <marker date="1509632901820" expanded="true" signature="22579:22760" ph="select * fro... product" />
+                <marker date="1509632901820" expanded="true" signature="22579:22781" ph="select stock... stock" />
+                <marker date="1509632901820" expanded="true" signature="22579:22782" ph="select stock... stock" />
+                <marker date="1509632901820" expanded="true" signature="23645:23865" ph="select stock... stock" />
+                <marker date="1509632901820" expanded="true" signature="24722:24907" ph="select stock... stock" />
+                <marker date="1509632901820" expanded="true" signature="26033:26053" ph="insert into supplier... " />
+                <marker date="1509632901820" expanded="true" signature="26033:26098" ph="insert into supplier... " />
+                <marker date="1509632901820" expanded="true" signature="26033:26107" ph="insert into supplier... " />
+                <marker date="1509632901820" expanded="true" signature="26033:26129" ph="insert into supplier... " />
+                <marker date="1509632901820" expanded="true" signature="26033:26150" ph="insert into supplier... " />
+                <marker date="1509632901820" expanded="true" signature="26033:26186" ph="insert into supplier... " />
+                <marker date="1509632901820" expanded="true" signature="26033:26205" ph="insert into supplier... " />
+                <marker date="1509632901820" expanded="true" signature="26816:26874" ph="select suppl... supplier" />
+                <marker date="1509632901820" expanded="true" signature="26816:27002" ph="select suppl... stock" />
+                <marker date="1509632901820" expanded="true" signature="26816:27005" ph="select suppl... stock" />
+                <marker date="1509632901820" expanded="true" signature="27107:27151" ph="select produ... product" />
+                <marker date="1509632901820" expanded="true" signature="27928:27972" ph="select id,fi... supplier" />
+                <marker date="1509632901820" expanded="true" signature="28030:28057" ph="select id,na... product" />
+                <marker date="1509632901820" expanded="true" signature="29069:29093" ph="insert into stock... " />
+                <marker date="1509632901820" expanded="true" signature="29069:29095" ph="insert into stock... " />
+                <marker date="1509632901820" expanded="true" signature="29069:29140" ph="insert into stock... " />
+                <marker date="1509632901820" expanded="true" signature="29069:29168" ph="insert into stock... " />
+                <marker date="1509632901820" expanded="true" signature="29069:29188" ph="insert into stock... " />
+                <marker date="1509632901820" expanded="true" signature="29216:29256" ph="update table... " />
+                <marker date="1509632901820" expanded="true" signature="29216:29257" ph="update table... " />
+                <marker date="1509632901820" expanded="true" signature="29216:29285" ph="update table... " />
+                <marker date="1509632901820" expanded="true" signature="29216:29286" ph="update table... " />
+                <marker date="1509632901820" expanded="true" signature="29531:29609" ph="insert into product... " />
+                <marker date="1509632901820" expanded="true" signature="29531:29627" ph="insert into product... " />
+                <marker date="1509632901820" expanded="true" signature="29531:29650" ph="insert into product... " />
+                <marker date="1509632901820" expanded="true" signature="29531:29665" ph="insert into product... " />
+                <marker date="1509632901820" expanded="true" signature="29531:29983" ph="insert into product... " />
+                <marker date="1509632901820" expanded="true" signature="29799:29811" ph="insert into prod... " />
+                <marker date="1509632901820" expanded="true" signature="29799:29825" ph="insert into stock... " />
+                <marker date="1509632901820" expanded="true" signature="29799:29876" ph="insert into stock... " />
+                <marker date="1509632901820" expanded="true" signature="29799:29888" ph="insert into stock... " />
+                <marker date="1509632901820" expanded="true" signature="29799:29905" ph="insert into stock... " />
+                <marker date="1509632901820" expanded="true" signature="29799:29908" ph="insert into stock... " />
+                <marker date="1509632901820" expanded="true" signature="30288:30337" ph="insert into feedback... " />
+                <marker date="1509632901820" expanded="true" signature="30288:30344" ph="insert into feedback... " />
+                <marker date="1509632901820" expanded="true" signature="30288:30363" ph="insert into feedback... " />
+                <marker date="1509632901820" expanded="true" signature="30288:30380" ph="insert into feedback... " />
+                <marker date="1509632901820" expanded="true" signature="30288:30399" ph="insert into feedback... " />
+                <marker date="1509632901820" expanded="true" signature="30288:30417" ph="insert into feedback... " />
+                <marker date="1509632901820" expanded="true" signature="30288:30419" ph="insert into feedback... " />
+                <marker date="1509632901820" expanded="true" signature="30654:30812" ph="insert into feedback... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminpages.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login/templates/login/adminpages.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="50" column="74" lean-forward="false" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contactus.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login/templates/login/contactus.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-141">
+              <caret line="19" column="56" lean-forward="false" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>debug</find>
+      <find>logo</find>
+      <find>submit</find>
+      <find>auth_user</find>
+      <find>name</find>
+      <find>logout</find>
+      <find>context</find>
+      <find>addtocart</find>
+      <find>update</find>
+      <find>product</find>
+      <find>values</find>
+      <find>redirect</find>
+      <find>order_total</find>
+      <find>products</find>
+      <find>cancel</find>
+      <find>orders</find>
+      <find>cost_item</find>
+      <find>is_super</find>
+      <find>admin_orders</find>
+      <find>ignore</find>
+      <find>insertemployee</find>
+      <find>Last</find>
+      <find>form</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/avadhoot/settings.py" />
+        <option value="$PROJECT_DIR$/login/databasehandle.py" />
+        <option value="$PROJECT_DIR$/login/models.py" />
+        <option value="$PROJECT_DIR$/avadhoot/urls.py" />
+        <option value="$PROJECT_DIR$/login/templates/login/login.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/signup.html" />
+        <option value="$PROJECT_DIR$/login/forms.py" />
+        <option value="$PROJECT_DIR$/login/templates/login/cart.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/adminpage.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/redirecttopay.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/base.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/orders.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/adminorders.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/view_stocks.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/view_stocks_supplier.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/viewstock.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/admin_orders.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/admin_user_details.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/admin_stock.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/addemployee.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/employees.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/addsupplier.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/viewsuppliers.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/view_stocks_product.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/admin_products.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/index.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/addstock.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/products.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/signin.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/contactus.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/adminpages.html" />
+        <option value="$PROJECT_DIR$/login/urls.py" />
+        <option value="$PROJECT_DIR$/login/views.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="-4" />
+    <option name="width" value="517" />
+    <option name="height" value="664" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="avadhoot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avadhoot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avadhoot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avadhoot" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avadhoot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avadhoot" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avadhoot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avadhoot" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avadhoot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avadhoot" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$USER_HOME$/Leave_Management_14074009/leave_management" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/login" />
+      <recent name="$PROJECT_DIR$/avadhoot/static/login" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.databasehandle">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="avadhoot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="avadhoot" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="avadhoot" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="avadhoot" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="avadhoot" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="avadhoot" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="avadhoot" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration name="databasehandle" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/login" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="avadhoot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/login/databasehandle.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="avadhoot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.manage" />
+      <item index="1" class="java.lang.String" itemvalue="Python.databasehandle" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.databasehandle" />
+        <item index="1" class="java.lang.String" itemvalue="Python.manage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="800d4be5-9422-4084-83d9-13307dfca902" name="Default" comment="" />
+      <created>1509118164172</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1509118164172</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14641288" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/login/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" column="67" lean-forward="false" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding>
+            <element signature="e#461#865#0" expanded="false" />
+            <element signature="e#894#2031#0" expanded="false" />
+            <element signature="e#2116#3619#0" expanded="false" />
+            <element signature="e#2461#2573#0" expanded="false" />
+            <element signature="e#3650#3967#0" expanded="false" />
+            <element signature="e#3994#4802#0" expanded="false" />
+            <element signature="e#4873#6016#0" expanded="false" />
+            <element signature="e#6046#6343#0" expanded="false" />
+            <element signature="e#6412#7724#0" expanded="false" />
+            <element signature="e#7773#8335#0" expanded="false" />
+            <element signature="e#8364#8997#0" expanded="false" />
+            <element signature="e#9024#9380#0" expanded="false" />
+            <element signature="e#9412#11657#0" expanded="false" />
+            <element signature="e#9509#9902#0" expanded="false" />
+            <element signature="e#11684#11896#0" expanded="false" />
+            <element signature="e#11927#13319#0" expanded="false" />
+            <element signature="e#13029#13252#0" expanded="false" />
+            <element signature="e#13361#13664#0" expanded="false" />
+            <element signature="e#13704#14308#0" expanded="false" />
+            <element signature="e#14347#15550#0" expanded="false" />
+            <element signature="e#15595#16684#0" expanded="false" />
+            <element signature="e#16717#18444#0" expanded="false" />
+            <element signature="e#18479#19741#0" expanded="false" />
+            <element signature="e#19773#19914#0" expanded="false" />
+            <element signature="e#19949#21029#0" expanded="false" />
+            <element signature="e#21071#21316#0" expanded="false" />
+            <element signature="e#21351#22108#0" expanded="false" />
+            <element signature="e#22152#23167#0" expanded="false" />
+            <element signature="e#23202#24261#0" expanded="false" />
+            <element signature="e#24306#25284#0" expanded="false" />
+            <element signature="e#25316#25459#0" expanded="false" />
+            <element signature="e#25494#26284#0" expanded="false" />
+            <element signature="e#26316#27546#0" expanded="false" />
+            <element signature="e#27575#28514#0" expanded="false" />
+            <element signature="e#28546#29983#0" expanded="false" />
+            <element signature="e#30012#30486#0" expanded="false" />
+            <marker date="1509632901820" expanded="true" signature="945:975" ph="select * fro... product" />
+            <marker date="1509632901820" expanded="true" signature="1040:1061" ph="select * fro... product" />
+            <marker date="1509632901820" expanded="true" signature="2282:2310" ph="select quant... product" />
+            <marker date="1509632901820" expanded="true" signature="2282:2321" ph="select quant... product" />
+            <marker date="1509632901820" expanded="true" signature="2282:2322" ph="select quant... product" />
+            <marker date="1509632901820" expanded="true" signature="2608:2637" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="2608:2638" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="2608:2687" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="2736:2772" ph="select price... product" />
+            <marker date="1509632901820" expanded="true" signature="2736:2773" ph="select price... product" />
+            <marker date="1509632901820" expanded="true" signature="2892:2926" ph="select * fro... cart" />
+            <marker date="1509632901820" expanded="true" signature="2892:2927" ph="select * fro... cart" />
+            <marker date="1509632901820" expanded="true" signature="2892:2964" ph="select * fro... cart" />
+            <marker date="1509632901820" expanded="true" signature="3045:3069" ph="insert into cart... " />
+            <marker date="1509632901820" expanded="true" signature="3045:3095" ph="insert into cart... " />
+            <marker date="1509632901820" expanded="true" signature="3045:3114" ph="insert into cart... " />
+            <marker date="1509632901820" expanded="true" signature="3045:3129" ph="insert into cart... " />
+            <marker date="1509632901820" expanded="true" signature="3045:3133" ph="insert into cart... " />
+            <marker date="1509632901820" expanded="true" signature="3180:3221" ph="select quant... cart" />
+            <marker date="1509632901820" expanded="true" signature="3180:3222" ph="select quant... cart" />
+            <marker date="1509632901820" expanded="true" signature="3180:3262" ph="select quant... cart" />
+            <marker date="1509632901820" expanded="true" signature="3180:3263" ph="select quant... cart" />
+            <marker date="1509632901820" expanded="true" signature="3401:3427" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="3401:3428" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="3401:3458" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="3401:3517" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="5353:5389" ph="select * fro... orders" />
+            <marker date="1509632901820" expanded="true" signature="5353:5390" ph="select * fro... orders" />
+            <marker date="1509632901820" expanded="true" signature="5555:5600" ph="select statu... payment" />
+            <marker date="1509632901820" expanded="true" signature="5555:5601" ph="select statu... payment" />
+            <marker date="1509632901820" expanded="true" signature="6547:6675" ph="select * fro... cart" />
+            <marker date="1509632901820" expanded="true" signature="6547:6704" ph="select * fro... cart" />
+            <marker date="1509632901820" expanded="true" signature="7187:7234" ph="select name,... product" />
+            <marker date="1509632901820" expanded="true" signature="7187:7235" ph="select name,... product" />
+            <marker date="1509632901820" expanded="true" signature="7918:7992" ph="select quant... cart" />
+            <marker date="1509632901820" expanded="true" signature="7918:8011" ph="select quant... cart" />
+            <marker date="1509632901820" expanded="true" signature="8099:8131" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="8099:8132" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="8099:8161" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="8099:8163" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="8099:8164" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="8099:8185" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="8206:8246" ph="update produ... " />
+            <marker date="1509632901820" expanded="true" signature="8206:8247" ph="update produ... " />
+            <marker date="1509632901820" expanded="true" signature="10592:10633" ph="select id fr... auth_user" />
+            <marker date="1509632901820" expanded="true" signature="10592:10634" ph="select id fr... auth_user" />
+            <marker date="1509632901820" expanded="true" signature="10592:10651" ph="select id fr... auth_user" />
+            <marker date="1509632901820" expanded="true" signature="10905:10930" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:10933" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:10950" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:10972" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:10973" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:10985" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:10999" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:11002" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="12140:12254" ph="select cart.... cart" />
+            <marker date="1509632901820" expanded="true" signature="12421:12470" ph="insert into payment... " />
+            <marker date="1509632901820" expanded="true" signature="12421:12471" ph="insert into payment... " />
+            <marker date="1509632901820" expanded="true" signature="12495:12624" ph="insert into orders... " />
+            <marker date="1509632901820" expanded="true" signature="12495:12643" ph="insert into orders... " />
+            <marker date="1509632901820" expanded="true" signature="12667:12711" ph="select order... orders" />
+            <marker date="1509632901820" expanded="true" signature="12815:12942" ph="select cart.... cart" />
+            <marker date="1509632901820" expanded="true" signature="13045:13146" ph="insert into order_items... " />
+            <marker date="1509632901820" expanded="true" signature="13174:13233" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="13821:13884" ph="select item_... order_items" />
+            <marker date="1509632901820" expanded="true" signature="13989:14062" ph="update produ... " />
+            <marker date="1509632901820" expanded="true" signature="14105:14146" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="14186:14222" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="14928:15110" ph="select users... users" />
+            <marker date="1509632901820" expanded="true" signature="15218:15258" ph="select city,... user_address" />
+            <marker date="1509632901820" expanded="true" signature="15218:15266" ph="select city,... user_address" />
+            <marker date="1509632901820" expanded="true" signature="16067:16104" ph="select * fro... orders" />
+            <marker date="1509632901820" expanded="true" signature="16269:16315" ph="select statu... payment" />
+            <marker date="1509632901820" expanded="true" signature="17319:17472" ph="select * fro... orders" />
+            <marker date="1509632901820" expanded="true" signature="17319:17526" ph="select order... orders" />
+            <marker date="1509632901820" expanded="true" signature="17628:17681" ph="select statu... payment" />
+            <marker date="1509632901820" expanded="true" signature="17628:17682" ph="select statu... payment" />
+            <marker date="1509632901820" expanded="true" signature="17767:17819" ph="select order... items" />
+            <marker date="1509632901820" expanded="true" signature="17767:17836" ph="select order... order_items" />
+            <marker date="1509632901820" expanded="true" signature="17767:17915" ph="select order... order_items" />
+            <marker date="1509632901820" expanded="true" signature="17767:17916" ph="select order... order_items" />
+            <marker date="1509632901820" expanded="true" signature="19032:19310" ph="select emplo... employee" />
+            <marker date="1509632901820" expanded="true" signature="19032:19339" ph="select emplo... employee" />
+            <marker date="1509632901820" expanded="true" signature="20671:20950" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="21191:21211" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="21191:21222" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="21191:21223" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="21724:21731" ph="select order... orders" />
+            <marker date="1509632901820" expanded="true" signature="21724:21745" ph="select * fro... product" />
+            <marker date="1509632901820" expanded="true" signature="21724:21759" ph="select * fro... product" />
+            <marker date="1509632901820" expanded="true" signature="22579:22760" ph="select * fro... product" />
+            <marker date="1509632901820" expanded="true" signature="22579:22781" ph="select stock... stock" />
+            <marker date="1509632901820" expanded="true" signature="22579:22782" ph="select stock... stock" />
+            <marker date="1509632901820" expanded="true" signature="23645:23865" ph="select stock... stock" />
+            <marker date="1509632901820" expanded="true" signature="24722:24907" ph="select stock... stock" />
+            <marker date="1509632901820" expanded="true" signature="26033:26053" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26033:26098" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26033:26107" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26033:26129" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26033:26150" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26033:26186" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26033:26205" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26816:26874" ph="select suppl... supplier" />
+            <marker date="1509632901820" expanded="true" signature="26816:27002" ph="select suppl... stock" />
+            <marker date="1509632901820" expanded="true" signature="26816:27005" ph="select suppl... stock" />
+            <marker date="1509632901820" expanded="true" signature="27107:27151" ph="select produ... product" />
+            <marker date="1509632901820" expanded="true" signature="27928:27972" ph="select id,fi... supplier" />
+            <marker date="1509632901820" expanded="true" signature="28030:28057" ph="select id,na... product" />
+            <marker date="1509632901820" expanded="true" signature="29069:29093" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29069:29095" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29069:29140" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29069:29168" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29069:29188" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29216:29256" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="29216:29257" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="29216:29285" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="29216:29286" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="29531:29609" ph="insert into product... " />
+            <marker date="1509632901820" expanded="true" signature="29531:29627" ph="insert into product... " />
+            <marker date="1509632901820" expanded="true" signature="29531:29650" ph="insert into product... " />
+            <marker date="1509632901820" expanded="true" signature="29531:29665" ph="insert into product... " />
+            <marker date="1509632901820" expanded="true" signature="29531:29983" ph="insert into product... " />
+            <marker date="1509632901820" expanded="true" signature="29799:29811" ph="insert into prod... " />
+            <marker date="1509632901820" expanded="true" signature="29799:29825" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29799:29876" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29799:29888" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29799:29905" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29799:29908" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30337" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30344" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30363" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30380" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30399" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30417" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30419" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30654:30812" ph="insert into feedback... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/avadhoot/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/avadhoot/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="42" lean-forward="false" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#461#865#0" expanded="false" />
+            <element signature="e#894#2031#0" expanded="false" />
+            <element signature="e#2116#3619#0" expanded="false" />
+            <element signature="e#2461#2573#0" expanded="false" />
+            <element signature="e#3650#3967#0" expanded="false" />
+            <element signature="e#3994#4802#0" expanded="false" />
+            <element signature="e#4873#6016#0" expanded="false" />
+            <element signature="e#6046#6343#0" expanded="false" />
+            <element signature="e#6412#7724#0" expanded="false" />
+            <element signature="e#7773#8335#0" expanded="false" />
+            <element signature="e#8364#8997#0" expanded="false" />
+            <element signature="e#9024#9380#0" expanded="false" />
+            <element signature="e#9412#11657#0" expanded="false" />
+            <element signature="e#9509#9902#0" expanded="false" />
+            <element signature="e#11684#11896#0" expanded="false" />
+            <element signature="e#11927#13319#0" expanded="false" />
+            <element signature="e#13029#13252#0" expanded="false" />
+            <element signature="e#13361#13664#0" expanded="false" />
+            <element signature="e#13704#14308#0" expanded="false" />
+            <element signature="e#14347#15550#0" expanded="false" />
+            <element signature="e#15595#16684#0" expanded="false" />
+            <element signature="e#16717#18444#0" expanded="false" />
+            <element signature="e#18479#19741#0" expanded="false" />
+            <element signature="e#19773#19914#0" expanded="false" />
+            <element signature="e#19949#21029#0" expanded="false" />
+            <element signature="e#21071#21316#0" expanded="false" />
+            <element signature="e#21351#22108#0" expanded="false" />
+            <element signature="e#22152#23167#0" expanded="false" />
+            <element signature="e#23202#24261#0" expanded="false" />
+            <element signature="e#24306#25284#0" expanded="false" />
+            <element signature="e#25316#25459#0" expanded="false" />
+            <element signature="e#25494#26284#0" expanded="false" />
+            <element signature="e#26316#27546#0" expanded="false" />
+            <element signature="e#27575#28514#0" expanded="false" />
+            <element signature="e#28546#29983#0" expanded="false" />
+            <element signature="e#30012#30486#0" expanded="false" />
+            <marker date="1509632901820" expanded="true" signature="945:975" ph="select * fro... product" />
+            <marker date="1509632901820" expanded="true" signature="1040:1061" ph="select * fro... product" />
+            <marker date="1509632901820" expanded="true" signature="2282:2310" ph="select quant... product" />
+            <marker date="1509632901820" expanded="true" signature="2282:2321" ph="select quant... product" />
+            <marker date="1509632901820" expanded="true" signature="2282:2322" ph="select quant... product" />
+            <marker date="1509632901820" expanded="true" signature="2608:2637" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="2608:2638" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="2608:2687" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="2736:2772" ph="select price... product" />
+            <marker date="1509632901820" expanded="true" signature="2736:2773" ph="select price... product" />
+            <marker date="1509632901820" expanded="true" signature="2892:2926" ph="select * fro... cart" />
+            <marker date="1509632901820" expanded="true" signature="2892:2927" ph="select * fro... cart" />
+            <marker date="1509632901820" expanded="true" signature="2892:2964" ph="select * fro... cart" />
+            <marker date="1509632901820" expanded="true" signature="3045:3069" ph="insert into cart... " />
+            <marker date="1509632901820" expanded="true" signature="3045:3095" ph="insert into cart... " />
+            <marker date="1509632901820" expanded="true" signature="3045:3114" ph="insert into cart... " />
+            <marker date="1509632901820" expanded="true" signature="3045:3129" ph="insert into cart... " />
+            <marker date="1509632901820" expanded="true" signature="3045:3133" ph="insert into cart... " />
+            <marker date="1509632901820" expanded="true" signature="3180:3221" ph="select quant... cart" />
+            <marker date="1509632901820" expanded="true" signature="3180:3222" ph="select quant... cart" />
+            <marker date="1509632901820" expanded="true" signature="3180:3262" ph="select quant... cart" />
+            <marker date="1509632901820" expanded="true" signature="3180:3263" ph="select quant... cart" />
+            <marker date="1509632901820" expanded="true" signature="3401:3427" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="3401:3428" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="3401:3458" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="3401:3517" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="5353:5389" ph="select * fro... orders" />
+            <marker date="1509632901820" expanded="true" signature="5353:5390" ph="select * fro... orders" />
+            <marker date="1509632901820" expanded="true" signature="5555:5600" ph="select statu... payment" />
+            <marker date="1509632901820" expanded="true" signature="5555:5601" ph="select statu... payment" />
+            <marker date="1509632901820" expanded="true" signature="6547:6675" ph="select * fro... cart" />
+            <marker date="1509632901820" expanded="true" signature="6547:6704" ph="select * fro... cart" />
+            <marker date="1509632901820" expanded="true" signature="7187:7234" ph="select name,... product" />
+            <marker date="1509632901820" expanded="true" signature="7187:7235" ph="select name,... product" />
+            <marker date="1509632901820" expanded="true" signature="7918:7992" ph="select quant... cart" />
+            <marker date="1509632901820" expanded="true" signature="7918:8011" ph="select quant... cart" />
+            <marker date="1509632901820" expanded="true" signature="8099:8131" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="8099:8132" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="8099:8161" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="8099:8163" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="8099:8164" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="8099:8185" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="8206:8246" ph="update produ... " />
+            <marker date="1509632901820" expanded="true" signature="8206:8247" ph="update produ... " />
+            <marker date="1509632901820" expanded="true" signature="10592:10633" ph="select id fr... auth_user" />
+            <marker date="1509632901820" expanded="true" signature="10592:10634" ph="select id fr... auth_user" />
+            <marker date="1509632901820" expanded="true" signature="10592:10651" ph="select id fr... auth_user" />
+            <marker date="1509632901820" expanded="true" signature="10905:10930" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:10933" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:10950" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:10972" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:10973" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:10985" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:10999" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:11002" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="12140:12254" ph="select cart.... cart" />
+            <marker date="1509632901820" expanded="true" signature="12421:12470" ph="insert into payment... " />
+            <marker date="1509632901820" expanded="true" signature="12421:12471" ph="insert into payment... " />
+            <marker date="1509632901820" expanded="true" signature="12495:12624" ph="insert into orders... " />
+            <marker date="1509632901820" expanded="true" signature="12495:12643" ph="insert into orders... " />
+            <marker date="1509632901820" expanded="true" signature="12667:12711" ph="select order... orders" />
+            <marker date="1509632901820" expanded="true" signature="12815:12942" ph="select cart.... cart" />
+            <marker date="1509632901820" expanded="true" signature="13045:13146" ph="insert into order_items... " />
+            <marker date="1509632901820" expanded="true" signature="13174:13233" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="13821:13884" ph="select item_... order_items" />
+            <marker date="1509632901820" expanded="true" signature="13989:14062" ph="update produ... " />
+            <marker date="1509632901820" expanded="true" signature="14105:14146" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="14186:14222" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="14928:15110" ph="select users... users" />
+            <marker date="1509632901820" expanded="true" signature="15218:15258" ph="select city,... user_address" />
+            <marker date="1509632901820" expanded="true" signature="15218:15266" ph="select city,... user_address" />
+            <marker date="1509632901820" expanded="true" signature="16067:16104" ph="select * fro... orders" />
+            <marker date="1509632901820" expanded="true" signature="16269:16315" ph="select statu... payment" />
+            <marker date="1509632901820" expanded="true" signature="17319:17472" ph="select * fro... orders" />
+            <marker date="1509632901820" expanded="true" signature="17319:17526" ph="select order... orders" />
+            <marker date="1509632901820" expanded="true" signature="17628:17681" ph="select statu... payment" />
+            <marker date="1509632901820" expanded="true" signature="17628:17682" ph="select statu... payment" />
+            <marker date="1509632901820" expanded="true" signature="17767:17819" ph="select order... items" />
+            <marker date="1509632901820" expanded="true" signature="17767:17836" ph="select order... order_items" />
+            <marker date="1509632901820" expanded="true" signature="17767:17915" ph="select order... order_items" />
+            <marker date="1509632901820" expanded="true" signature="17767:17916" ph="select order... order_items" />
+            <marker date="1509632901820" expanded="true" signature="19032:19310" ph="select emplo... employee" />
+            <marker date="1509632901820" expanded="true" signature="19032:19339" ph="select emplo... employee" />
+            <marker date="1509632901820" expanded="true" signature="20671:20950" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="21191:21211" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="21191:21222" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="21191:21223" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="21724:21731" ph="select order... orders" />
+            <marker date="1509632901820" expanded="true" signature="21724:21745" ph="select * fro... product" />
+            <marker date="1509632901820" expanded="true" signature="21724:21759" ph="select * fro... product" />
+            <marker date="1509632901820" expanded="true" signature="22579:22760" ph="select * fro... product" />
+            <marker date="1509632901820" expanded="true" signature="22579:22781" ph="select stock... stock" />
+            <marker date="1509632901820" expanded="true" signature="22579:22782" ph="select stock... stock" />
+            <marker date="1509632901820" expanded="true" signature="23645:23865" ph="select stock... stock" />
+            <marker date="1509632901820" expanded="true" signature="24722:24907" ph="select stock... stock" />
+            <marker date="1509632901820" expanded="true" signature="26033:26053" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26033:26098" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26033:26107" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26033:26129" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26033:26150" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26033:26186" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26033:26205" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26816:26874" ph="select suppl... supplier" />
+            <marker date="1509632901820" expanded="true" signature="26816:27002" ph="select suppl... stock" />
+            <marker date="1509632901820" expanded="true" signature="26816:27005" ph="select suppl... stock" />
+            <marker date="1509632901820" expanded="true" signature="27107:27151" ph="select produ... product" />
+            <marker date="1509632901820" expanded="true" signature="27928:27972" ph="select id,fi... supplier" />
+            <marker date="1509632901820" expanded="true" signature="28030:28057" ph="select id,na... product" />
+            <marker date="1509632901820" expanded="true" signature="29069:29093" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29069:29095" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29069:29140" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29069:29168" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29069:29188" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29216:29256" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="29216:29257" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="29216:29285" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="29216:29286" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="29531:29609" ph="insert into product... " />
+            <marker date="1509632901820" expanded="true" signature="29531:29627" ph="insert into product... " />
+            <marker date="1509632901820" expanded="true" signature="29531:29650" ph="insert into product... " />
+            <marker date="1509632901820" expanded="true" signature="29531:29665" ph="insert into product... " />
+            <marker date="1509632901820" expanded="true" signature="29531:29983" ph="insert into product... " />
+            <marker date="1509632901820" expanded="true" signature="29799:29811" ph="insert into prod... " />
+            <marker date="1509632901820" expanded="true" signature="29799:29825" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29799:29876" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29799:29888" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29799:29905" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29799:29908" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30337" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30344" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30363" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30380" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30399" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30417" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30419" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30654:30812" ph="insert into feedback... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/avadhoot/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="67" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/avadhoot/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/databasehandle.py" />
+    <entry file="file://$PROJECT_DIR$/login/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/avadhoot/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/login.html" />
+    <entry file="file://$USER_HOME$/Leave_Management_14074009/leave_management/leave/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Leave_Management_14074009/leave_management/leave/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Leave_Management_14074009/leave_management/leave/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Leave_Management_14074009/leave_management/leave_management/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Leave_Management_14074009/leave_management/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Leave_Management_14074009/leave_management/leave_management/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Leave_Management_14074009/leave_management/leave/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="421" column="49" lean-forward="true" selection-start-line="418" selection-start-column="4" selection-end-line="421" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="72" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/adminpage.html" />
+    <entry file="file://$PROJECT_DIR$/login/templates/login/redirecttopay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/adminorders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="43" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/orders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="4" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/view_stocks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/view_stocks_supplier.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/viewstock.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/admin_orders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/admin_user_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/admin_stock.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="33" column="10" lean-forward="false" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/addemployee.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="56" column="53" lean-forward="false" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/employees.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="45" column="66" lean-forward="false" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/viewsuppliers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="30" column="40" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/addsupplier.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/view_stocks_product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/admin_products.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/avadhoot/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-860">
+          <caret line="54" column="5" lean-forward="false" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/addstock.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="30" column="93" lean-forward="false" selection-start-line="30" selection-start-column="93" selection-end-line="30" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/products.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/signin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/contactus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-141">
+          <caret line="19" column="56" lean-forward="false" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/adminpages.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="50" column="74" lean-forward="false" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="23" column="66" lean-forward="false" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="769" column="4" lean-forward="true" selection-start-line="769" selection-start-column="4" selection-end-line="769" selection-end-column="4" />
+          <folding>
+            <element signature="e#461#865#0" expanded="false" />
+            <element signature="e#894#2031#0" expanded="false" />
+            <element signature="e#2116#3619#0" expanded="false" />
+            <element signature="e#2461#2573#0" expanded="false" />
+            <element signature="e#3650#3967#0" expanded="false" />
+            <element signature="e#3994#4802#0" expanded="false" />
+            <element signature="e#4873#6016#0" expanded="false" />
+            <element signature="e#6046#6343#0" expanded="false" />
+            <element signature="e#6412#7724#0" expanded="false" />
+            <element signature="e#7773#8335#0" expanded="false" />
+            <element signature="e#8364#8997#0" expanded="false" />
+            <element signature="e#9024#9380#0" expanded="false" />
+            <element signature="e#9412#11657#0" expanded="false" />
+            <element signature="e#9509#9902#0" expanded="false" />
+            <element signature="e#11684#11896#0" expanded="false" />
+            <element signature="e#11927#13319#0" expanded="false" />
+            <element signature="e#13029#13252#0" expanded="false" />
+            <element signature="e#13361#13664#0" expanded="false" />
+            <element signature="e#13704#14308#0" expanded="false" />
+            <element signature="e#14347#15550#0" expanded="false" />
+            <element signature="e#15595#16684#0" expanded="false" />
+            <element signature="e#16717#18444#0" expanded="false" />
+            <element signature="e#18479#19741#0" expanded="false" />
+            <element signature="e#19773#19914#0" expanded="false" />
+            <element signature="e#19949#21029#0" expanded="false" />
+            <element signature="e#21071#21316#0" expanded="false" />
+            <element signature="e#21351#22108#0" expanded="false" />
+            <element signature="e#22152#23167#0" expanded="false" />
+            <element signature="e#23202#24261#0" expanded="false" />
+            <element signature="e#24306#25284#0" expanded="false" />
+            <element signature="e#25316#25459#0" expanded="false" />
+            <element signature="e#25494#26284#0" expanded="false" />
+            <element signature="e#26316#27546#0" expanded="false" />
+            <element signature="e#27575#28514#0" expanded="false" />
+            <element signature="e#28546#29983#0" expanded="false" />
+            <element signature="e#30012#30486#0" expanded="false" />
+            <marker date="1509632901820" expanded="true" signature="945:975" ph="select * fro... product" />
+            <marker date="1509632901820" expanded="true" signature="1040:1061" ph="select * fro... product" />
+            <marker date="1509632901820" expanded="true" signature="2282:2310" ph="select quant... product" />
+            <marker date="1509632901820" expanded="true" signature="2282:2321" ph="select quant... product" />
+            <marker date="1509632901820" expanded="true" signature="2282:2322" ph="select quant... product" />
+            <marker date="1509632901820" expanded="true" signature="2608:2637" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="2608:2638" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="2608:2687" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="2736:2772" ph="select price... product" />
+            <marker date="1509632901820" expanded="true" signature="2736:2773" ph="select price... product" />
+            <marker date="1509632901820" expanded="true" signature="2892:2926" ph="select * fro... cart" />
+            <marker date="1509632901820" expanded="true" signature="2892:2927" ph="select * fro... cart" />
+            <marker date="1509632901820" expanded="true" signature="2892:2964" ph="select * fro... cart" />
+            <marker date="1509632901820" expanded="true" signature="3045:3069" ph="insert into cart... " />
+            <marker date="1509632901820" expanded="true" signature="3045:3095" ph="insert into cart... " />
+            <marker date="1509632901820" expanded="true" signature="3045:3114" ph="insert into cart... " />
+            <marker date="1509632901820" expanded="true" signature="3045:3129" ph="insert into cart... " />
+            <marker date="1509632901820" expanded="true" signature="3045:3133" ph="insert into cart... " />
+            <marker date="1509632901820" expanded="true" signature="3180:3221" ph="select quant... cart" />
+            <marker date="1509632901820" expanded="true" signature="3180:3222" ph="select quant... cart" />
+            <marker date="1509632901820" expanded="true" signature="3180:3262" ph="select quant... cart" />
+            <marker date="1509632901820" expanded="true" signature="3180:3263" ph="select quant... cart" />
+            <marker date="1509632901820" expanded="true" signature="3401:3427" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="3401:3428" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="3401:3458" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="3401:3517" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="5353:5389" ph="select * fro... orders" />
+            <marker date="1509632901820" expanded="true" signature="5353:5390" ph="select * fro... orders" />
+            <marker date="1509632901820" expanded="true" signature="5555:5600" ph="select statu... payment" />
+            <marker date="1509632901820" expanded="true" signature="5555:5601" ph="select statu... payment" />
+            <marker date="1509632901820" expanded="true" signature="6547:6675" ph="select * fro... cart" />
+            <marker date="1509632901820" expanded="true" signature="6547:6704" ph="select * fro... cart" />
+            <marker date="1509632901820" expanded="true" signature="7187:7234" ph="select name,... product" />
+            <marker date="1509632901820" expanded="true" signature="7187:7235" ph="select name,... product" />
+            <marker date="1509632901820" expanded="true" signature="7918:7992" ph="select quant... cart" />
+            <marker date="1509632901820" expanded="true" signature="7918:8011" ph="select quant... cart" />
+            <marker date="1509632901820" expanded="true" signature="8099:8131" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="8099:8132" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="8099:8161" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="8099:8163" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="8099:8164" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="8099:8185" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="8206:8246" ph="update produ... " />
+            <marker date="1509632901820" expanded="true" signature="8206:8247" ph="update produ... " />
+            <marker date="1509632901820" expanded="true" signature="10592:10633" ph="select id fr... auth_user" />
+            <marker date="1509632901820" expanded="true" signature="10592:10634" ph="select id fr... auth_user" />
+            <marker date="1509632901820" expanded="true" signature="10592:10651" ph="select id fr... auth_user" />
+            <marker date="1509632901820" expanded="true" signature="10905:10930" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:10933" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:10950" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:10972" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:10973" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:10985" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:10999" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="10905:11002" ph="insert into users... " />
+            <marker date="1509632901820" expanded="true" signature="12140:12254" ph="select cart.... cart" />
+            <marker date="1509632901820" expanded="true" signature="12421:12470" ph="insert into payment... " />
+            <marker date="1509632901820" expanded="true" signature="12421:12471" ph="insert into payment... " />
+            <marker date="1509632901820" expanded="true" signature="12495:12624" ph="insert into orders... " />
+            <marker date="1509632901820" expanded="true" signature="12495:12643" ph="insert into orders... " />
+            <marker date="1509632901820" expanded="true" signature="12667:12711" ph="select order... orders" />
+            <marker date="1509632901820" expanded="true" signature="12815:12942" ph="select cart.... cart" />
+            <marker date="1509632901820" expanded="true" signature="13045:13146" ph="insert into order_items... " />
+            <marker date="1509632901820" expanded="true" signature="13174:13233" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="13821:13884" ph="select item_... order_items" />
+            <marker date="1509632901820" expanded="true" signature="13989:14062" ph="update produ... " />
+            <marker date="1509632901820" expanded="true" signature="14105:14146" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="14186:14222" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="14928:15110" ph="select users... users" />
+            <marker date="1509632901820" expanded="true" signature="15218:15258" ph="select city,... user_address" />
+            <marker date="1509632901820" expanded="true" signature="15218:15266" ph="select city,... user_address" />
+            <marker date="1509632901820" expanded="true" signature="16067:16104" ph="select * fro... orders" />
+            <marker date="1509632901820" expanded="true" signature="16269:16315" ph="select statu... payment" />
+            <marker date="1509632901820" expanded="true" signature="17319:17472" ph="select * fro... orders" />
+            <marker date="1509632901820" expanded="true" signature="17319:17526" ph="select order... orders" />
+            <marker date="1509632901820" expanded="true" signature="17628:17681" ph="select statu... payment" />
+            <marker date="1509632901820" expanded="true" signature="17628:17682" ph="select statu... payment" />
+            <marker date="1509632901820" expanded="true" signature="17767:17819" ph="select order... items" />
+            <marker date="1509632901820" expanded="true" signature="17767:17836" ph="select order... order_items" />
+            <marker date="1509632901820" expanded="true" signature="17767:17915" ph="select order... order_items" />
+            <marker date="1509632901820" expanded="true" signature="17767:17916" ph="select order... order_items" />
+            <marker date="1509632901820" expanded="true" signature="19032:19310" ph="select emplo... employee" />
+            <marker date="1509632901820" expanded="true" signature="19032:19339" ph="select emplo... employee" />
+            <marker date="1509632901820" expanded="true" signature="20671:20950" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="21191:21211" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="21191:21222" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="21191:21223" ph="delete from " />
+            <marker date="1509632901820" expanded="true" signature="21724:21731" ph="select order... orders" />
+            <marker date="1509632901820" expanded="true" signature="21724:21745" ph="select * fro... product" />
+            <marker date="1509632901820" expanded="true" signature="21724:21759" ph="select * fro... product" />
+            <marker date="1509632901820" expanded="true" signature="22579:22760" ph="select * fro... product" />
+            <marker date="1509632901820" expanded="true" signature="22579:22781" ph="select stock... stock" />
+            <marker date="1509632901820" expanded="true" signature="22579:22782" ph="select stock... stock" />
+            <marker date="1509632901820" expanded="true" signature="23645:23865" ph="select stock... stock" />
+            <marker date="1509632901820" expanded="true" signature="24722:24907" ph="select stock... stock" />
+            <marker date="1509632901820" expanded="true" signature="26033:26053" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26033:26098" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26033:26107" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26033:26129" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26033:26150" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26033:26186" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26033:26205" ph="insert into supplier... " />
+            <marker date="1509632901820" expanded="true" signature="26816:26874" ph="select suppl... supplier" />
+            <marker date="1509632901820" expanded="true" signature="26816:27002" ph="select suppl... stock" />
+            <marker date="1509632901820" expanded="true" signature="26816:27005" ph="select suppl... stock" />
+            <marker date="1509632901820" expanded="true" signature="27107:27151" ph="select produ... product" />
+            <marker date="1509632901820" expanded="true" signature="27928:27972" ph="select id,fi... supplier" />
+            <marker date="1509632901820" expanded="true" signature="28030:28057" ph="select id,na... product" />
+            <marker date="1509632901820" expanded="true" signature="29069:29093" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29069:29095" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29069:29140" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29069:29168" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29069:29188" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29216:29256" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="29216:29257" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="29216:29285" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="29216:29286" ph="update table... " />
+            <marker date="1509632901820" expanded="true" signature="29531:29609" ph="insert into product... " />
+            <marker date="1509632901820" expanded="true" signature="29531:29627" ph="insert into product... " />
+            <marker date="1509632901820" expanded="true" signature="29531:29650" ph="insert into product... " />
+            <marker date="1509632901820" expanded="true" signature="29531:29665" ph="insert into product... " />
+            <marker date="1509632901820" expanded="true" signature="29531:29983" ph="insert into product... " />
+            <marker date="1509632901820" expanded="true" signature="29799:29811" ph="insert into prod... " />
+            <marker date="1509632901820" expanded="true" signature="29799:29825" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29799:29876" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29799:29888" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29799:29905" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="29799:29908" ph="insert into stock... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30337" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30344" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30363" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30380" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30399" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30417" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30288:30419" ph="insert into feedback... " />
+            <marker date="1509632901820" expanded="true" signature="30654:30812" ph="insert into feedback... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
