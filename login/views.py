@@ -77,19 +77,23 @@ def addtocart(request, productid):
         db.close()
         return redirect('login:products')
     else:
-        cursor.execute("update product set quantity = " + str(quantity_left - quantity) + " where id = "+ str(productid) + ";")
+        cursor.execute("update product set quantity = " + str(quantity_left - quantity) + " where id = "+ 
+                       str(productid) + ";")
         cursor.execute("select price from product where id = "+str(productid)+";")
         price = cursor.fetchone()
         price = price[0]
-        preventries = cursor.execute("select * from cart where cust_id = "+str(request.user.id)+" and item_id="+str(productid)+";")
+        preventries = cursor.execute("select * from cart where cust_id = "+str(request.user.id)+" and item_id="+
+                                     str(productid)+";")
 
         if preventries == 0:
             cursor.execute( "insert into cart values(" +str(request.user.id)+","+str(productid)+","+str(quantity)+ ");" )
         else:
-            cursor.execute("select quantity from cart where cust_id = "+str(request.user.id) + " and item_id = "+str(productid)+";")
+            cursor.execute("select quantity from cart where cust_id = "+str(request.user.id) + " and item_id = "+
+                           str(productid)+";")
             prevquantity = cursor.fetchone()
             prevquantity = prevquantity[0]
-            cursor.execute("update cart set quantity = "+ str(prevquantity+quantity)+" where cust_id = "+str(request.user.id) + " and item_id = "+str(productid)+";")
+            cursor.execute("update cart set quantity = "+ str(prevquantity+quantity)+" where cust_id = "+
+                           str(request.user.id) + " and item_id = "+str(productid)+";")
         db.commit()
         db.close()
         return redirect('login:products')
@@ -180,7 +184,8 @@ def cart(request):
     print('cart')
     db = MySQLdb.connect('localhost','rahulp','password1234','avadhootent')
     cursor = db.cursor()
-    cursor.execute("select cart.item_id,cart.quantity,product.price from cart inner join product on cart.item_id = product.id where cart.cust_id = '" + str(request.user.id) + "';")
+    cursor.execute("select cart.item_id,cart.quantity,product.price from cart inner join product on cart.item_id
+                   = product.id where cart.cust_id = '" + str(request.user.id) + "';")
     class cartobject:
         def __init__(self,item_id,name,description,quantity,cost_item,cust_id):
             self.item_id = item_id
@@ -296,7 +301,8 @@ class UserFormView(View):
             userid = int(userid[0])
             cursor.execute(
                 "insert ignore into user_address values (" + str(pin) + ",'" + str(city) + "','" + str(state) + "')")
-            cursor.execute("insert into users values(" + str(userid) + ",'" + str(address)+ "',"+str(pin)+",'"+str(phone)+"');")
+            cursor.execute("insert into users values(" + str(userid) + ",'" + str(address)+ "',"+str(pin)+",'"+
+                           str(phone)+"');")
 
             db.commit()
             db.close()
@@ -331,20 +337,24 @@ def placeorder(request):
     id = request.user.id
     now = datetime.datetime.now()
     today = now.strftime("%d/%m/%y")
-    cursor.execute("select cart.quantity,product.price from cart inner join product on cart.item_id = product.id where cart.cust_id = "+str(id)+";")
+    cursor.execute("select cart.quantity,product.price from cart inner join product on cart.item_id = 
+                   product.id where cart.cust_id = "+str(id)+";")
     pricecalculate = cursor.fetchall()
     order_total = 0.0
     for item in pricecalculate:
         order_total += item[0]*item[1]
     cursor.execute("insert into payment (status,details) values (0,'');")
-    cursor.execute("insert into orders (cust_id,order_date,total_cost,payment_id,delivery_status) values ("+str(id)+",CURDATE(),"+str(order_total)+",LAST_INSERT_ID(),0);")
+    cursor.execute("insert into orders (cust_id,order_date,total_cost,payment_id,delivery_status) values 
+                   ("+str(id)+",CURDATE(),"+str(order_total)+",LAST_INSERT_ID(),0);")
     cursor.execute("select order_id from orders where cust_id = "+str(id)+";")
     order_id = cursor.fetchall()
     order_id = int(order_id[-1][0])
-    cursor.execute("select cart.item_id,cart.quantity,product.price from cart inner join product on cart.item_id = product.id where cart.cust_id = "+str(id)+" ;")
+    cursor.execute("select cart.item_id,cart.quantity,product.price from cart inner join product on cart.item_id 
+                   = product.id where cart.cust_id = "+str(id)+" ;")
     cart_items = cursor.fetchall()
     for item in cart_items:
-        cursor.execute("insert into order_items values ("+str(order_id)+","+str(item[0])+","+str(item[1])+","+str(item[2])+");")
+        cursor.execute("insert into order_items values ("+str(order_id)+","+str(item[0])+","+str(item[1])+",
+                       "+str(item[2])+");")
         cursor.execute("delete from cart where cust_id = "+str(id)+" and item_id = "+str(item[0])+";")
     db.commit()
     db.close()
@@ -367,7 +377,8 @@ def cancelorder(request,orderid):
     cursor.execute("select item_id,item_quantity from order_items where order_id = "+str(orderid)+";")
     torestore = cursor.fetchall()
     for item in torestore:
-        cursor.execute("update product set quantity = quantity + " + str(item[1]) + " where id = "+ str(item[0])+ ";");
+        cursor.execute("update product set quantity = quantity + " + str(item[1]) + " where id = "+ 
+                       str(item[0])+ ";");
     cursor.execute("delete from order_items where order_id = "+str(orderid)+";")
     cursor.execute("delete from orders where order_id = "+str(orderid)+";")
     db.commit()
@@ -392,7 +403,8 @@ def admin_user_details(request):
 
     db = MySQLdb.connect('localhost','rahulp','password1234','avadhootent')
     cursor = db.cursor()
-    cursor.execute("select users.userid,auth_user.username,auth_user.first_name,auth_user.last_name,users.address,users.pincode,users.phone from users inner join auth_user on users.userid = auth_user.id;")
+    cursor.execute("select users.userid,auth_user.username,auth_user.first_name,auth_user.last_name,
+                   users.address,users.pincode,users.phone from users inner join auth_user on users.userid = auth_user.id;")
     uservalues = cursor.fetchall()
     entries = []
     for item in uservalues:
@@ -435,7 +447,8 @@ def view_user_orders(request,orderid):
 
 def admin_orders(request):
     class order_display:
-        def __init__(self,orderid,customername,productnames,orderdate,cost,deliverystatus,paymentstatus,paymentdetails):
+        def __init__(self,orderid,customername,productnames,orderdate,cost,deliverystatus,paymentstatus
+                     ,paymentdetails):
             self.orderid = orderid
             self.customername = customername
             self.productnames = productnames
@@ -447,18 +460,22 @@ def admin_orders(request):
 
     db = MySQLdb.connect('localhost','rahulp','password1234','avadhootent')
     cursor = db.cursor()
-    cursor.execute("select orders.order_id,auth_user.first_name,auth_user.last_name,orders.order_date,orders.total_cost,orders.delivery_status,orders.payment_id  from orders inner join auth_user on orders.cust_id = auth_user.id;")
+    cursor.execute("select orders.order_id,auth_user.first_name,auth_user.last_name,orders.order_date,
+                   orders.total_cost,orders.delivery_status,orders.payment_id  
+                   from orders inner join auth_user on orders.cust_id = auth_user.id;")
     entries = cursor.fetchall()
     details = []
     for item in entries:
         cursor.execute("select status,details from payment where payment_id = "+str(item[-1])+";")
         paymentstat = cursor.fetchone()
-        cursor.execute("select order_items.item_quantity, product.name from order_items inner join product on order_items.item_id = product.id  where order_items.order_id = "+str(item[0])+";")
+        cursor.execute("select order_items.item_quantity, product.name from order_items inner join product 
+                       on order_items.item_id = product.id  where order_items.order_id = "+str(item[0])+";")
         productsget = cursor.fetchall()
         listofproducts = ""
         for element in productsget:
             listofproducts+= str(element[1])+": "+str(element[0])+",\n"
-        details.append(order_display(item[0],str(item[1])+" "+str(item[2]),listofproducts,item[3],item[4],item[5],paymentstat[0],paymentstat[1]))
+        details.append(order_display(item[0],str(item[1])+" "+str(item[2]),listofproducts,item[3],item[4],
+                                     item[5],paymentstat[0],paymentstat[1]))
     db.close()
     context={
         'loggedin':2,
@@ -483,11 +500,16 @@ def admin_employee(request):
 
     db = MySQLdb.connect('localhost', 'rahulp', 'password1234', 'avadhootent')
     cursor = db.cursor()
-    cursor.execute("select employee.id, employee.first_name, employee.last_name, employee.address,user_address.city,user_address.state,employee.pincode, employee.sex, employee.phone, employee.salary, employee.date_of_join from employee inner join user_address on employee.pincode = user_address.pin order by employee.first_name ;")
+    cursor.execute("select employee.id, employee.first_name, employee.last_name, employee.address,
+                   user_address.city,user_address.state,employee.pincode, employee.sex, employee.phone,
+                   employee.salary, 
+                   employee.date_of_join from employee inner join user_address on 
+                   employee.pincode = user_address.pin order by employee.first_name ;")
     entries = cursor.fetchall()
     people = []
     for item in entries:
-        people.append(adminemployee(item[0],str(item[1])+" "+str(item[2]),item[3],item[4],item[5],item[6],item[7],item[8],item[9],item[10]))
+        people.append(adminemployee(item[0],str(item[1])+" "+str(item[2]),item[3],item[4],
+                                    item[5],item[6],item[7],item[8],item[9],item[10]))
     context = {
         'loggedin':2,
         'name': request.user.first_name,
@@ -519,9 +541,13 @@ def insertemployee(request):
     db = MySQLdb.connect('localhost', 'rahulp', 'password1234', 'avadhootent')
     cursor = db.cursor()
     cursor.execute(
-        "insert ignore into user_address values (" + str(pincode) + ",'" + str(city) + "','" + str(state) + "');")
+        "insert ignore into user_address values (" + str(pincode) + ",'" + str(city) + "','" 
+        + str(state) + "');")
     cursor.execute(
-        "insert into employee (first_name,last_name,address,pincode,sex,phone,salary,date_of_join) values ('" + str(first_name) + "','" + str(last_name) + "','" + str(address) + "'," + str(pincode) + ",'" + str(sex) + "','" + str(phone) + "'," + str(salary) + ",'" + str(dateofjoin) + "');")
+        "insert into employee (first_name,last_name,address,pincode,sex,phone,salary,date_of_join)
+        values ('" + str(first_name) + "','" + str(last_name) + "','" + str(address) + "'," + 
+                str(pincode) + ",'" + str(sex) + "','" + str(phone) + "'," + str(salary) + ",'" 
+                + str(dateofjoin) + "');")
 
     db.commit()
     db.close()
@@ -570,7 +596,9 @@ def viewstockproduct(request,prodid):
 
     db = MySQLdb.connect('localhost','rahulp','password1234','avadhootent')
     cursor = db.cursor()
-    cursor.execute("select stock.supplier_id,supplier.first_name,supplier.last_name,stock.quantity,stock.date_of_supply,stock.comments from stock inner join supplier on stock.supplier_id = supplier.id where stock.prod_id = "+str(prodid)+";")
+    cursor.execute("select stock.supplier_id,supplier.first_name,supplier.last_name,stock.quantity,
+                   stock.date_of_supply,stock.comments from stock inner join supplier on stock.supplier_id
+                   = supplier.id where stock.prod_id = "+str(prodid)+";")
     entries = cursor.fetchall()
     details = []
     for item in entries:
@@ -597,11 +625,14 @@ def admin_supplier(request):
     db = MySQLdb.connect('localhost', 'rahulp', 'password1234', 'avadhootent')
     cursor = db.cursor()
     cursor.execute(
-        "select supplier.id,supplier.first_name,supplier.last_name,supplier.address,user_address.city,user_address.state,supplier.pincode,supplier.phone from supplier inner join user_address on supplier.pincode = user_address.pin;")
+        "select supplier.id,supplier.first_name,supplier.last_name,supplier.address,user_address.city,
+        user_address.state,supplier.pincode,supplier.phone from supplier inner join user_address on supplier.pincode 
+        = user_address.pin;")
     entries = cursor.fetchall()
     details = []
     for item in entries:
-        details.append(supplierpeople(item[0], str(item[1]) + " " + str(item[2]), item[3], item[4], item[5],item[6],item[7]))
+        details.append(supplierpeople(item[0], str(item[1]) + " " + str(item[2]), item[3], item[4], 
+                                      item[5],item[6],item[7]))
     db.close()
     context = {
         'loggedin': 2,
@@ -622,7 +653,9 @@ def viewstocksupplier(request,suppid):
 
     db = MySQLdb.connect('localhost','rahulp','password1234','avadhootent')
     cursor = db.cursor()
-    cursor.execute("select stock.prod_id,product.name,product.price,stock.quantity,stock.date_of_supply,stock.comments from stock inner join product on stock.prod_id = product.id where stock.supplier_id = "+str(suppid)+";")
+    cursor.execute("select stock.prod_id,product.name,product.price,stock.quantity,stock.date_of_supply,
+                   stock.comments from stock inner join product on stock.prod_id = product.id 
+                   where stock.supplier_id = "+str(suppid)+";")
     entries = cursor.fetchall()
     details = []
     for item in entries:
@@ -654,8 +687,10 @@ def insertsupplier(request):
     db = MySQLdb.connect('localhost','rahulp','password1234','avadhootent')
     cursor = db.cursor()
     cursor.execute(
-        "insert ignore into user_address values (" + str(pincode) + ",'" + str(city) + "','" + str(state) + "');")
-    cursor.execute("insert into supplier (first_name,last_name,address,pincode,phone) values ('"+str(first_name)+"','"+str(last_name)+"','"+str(address)+"',"+str(pincode)+",'"+str(phone) + "');")
+        "insert ignore into user_address values (" + str(pincode) + ",'" + str(city) + "','" + 
+        str(state) + "');")
+    cursor.execute("insert into supplier (first_name,last_name,address,pincode,phone) values 
+                   ('"+str(first_name)+"','"+str(last_name)+"','"+str(address)+"',"+str(pincode)+",'"+str(phone) + "');")
 
     db.commit()
     db.close()
@@ -673,7 +708,9 @@ def admin_stock(request):
 
     db = MySQLdb.connect('localhost', 'rahulp', 'password1234', 'avadhootent')
     cursor = db.cursor()
-    cursor.execute("select supplier.id,supplier.first_name,supplier.last_name,stock.prod_id, stock.quantity,stock.date_of_supply,stock.comments from stock inner join supplier on stock.supplier_id = supplier.id;")
+    cursor.execute("select supplier.id,supplier.first_name,supplier.last_name,stock.prod_id, 
+                   stock.quantity,stock.date_of_supply,stock.comments from stock inner join supplier on 
+                   stock.supplier_id = supplier.id;")
     entries = cursor.fetchall()
     details = []
     for item in entries:
@@ -737,18 +774,22 @@ def insertstock(request):
         print(quantity)
         print(comments)
         print(productchosen)
-        cursor.execute("insert into stock values ("+ str(productchosen) +","+str(supplierid)+","+str(quantity)+",CURDATE(),'"+str(comments)+"');")
-        cursor.execute("update product set quantity = quantity + "+str(quantity)+" where id = "+str(productchosen)+";")
+        cursor.execute("insert into stock values ("+ str(productchosen) +","+str(supplierid)+","+str
+                       (quantity)+",CURDATE(),'"+str(comments)+"');")
+        cursor.execute("update product set quantity = quantity + "+str(quantity)+" where id = "+
+                       str(productchosen)+";")
     elif productoption == "new":
         print(supplierid)
         name = request.POST.get('name')
         price = request.POST.get('price')
         description = request.POST.get('description')
-        cursor.execute("insert into product (name,quantity,description,price) values ('"+str(name)+"',"+str(quantity)+",'"+str(description)+"',"+str(price)+");")
+        cursor.execute("insert into product (name,quantity,description,price) values ('"+str(name)+"',"
+                       +str(quantity)+",'"+str(description)+"',"+str(price)+");")
         cursor.execute("select LAST_INSERT_ID();")
         id = cursor.fetchone()
         id = int(id[0])
-        cursor.execute("insert into stock values (" + str(id)+","+str(supplierid)+","+str(quantity)+",CURDATE(),'"+str(comments) +"');")
+        cursor.execute("insert into stock values (" + str(id)+","+str(supplierid)+","+str(quantity)
+                       +",CURDATE(),'"+str(comments) +"');")
     db.commit()
     db.close()
     return redirect('login:admin_stock')
@@ -761,7 +802,8 @@ def feedback(request):
 
     db = MySQLdb.connect('localhost','rahulp','password1234','avadhootent')
     cursor = db.cursor()
-    cursor.execute("insert into feedback (name,email,subject,message) values ('"+str(name)+"','"+str(email)+"','"+str(subject)+"','"+str(message)+"');")
+    cursor.execute("insert into feedback (name,email,subject,message) values ('"+str(name)+"','"+
+                   str(email)+"','"+str(subject)+"','"+str(message)+"');")
     db.commit()
     db.close()
     return redirect('login:index')
